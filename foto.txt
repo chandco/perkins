@@ -1,0 +1,84 @@
+					<!--
+                    <div>
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="first-img">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="second-img">        
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="third-img">
+                    </div>
+                    
+                    <div>
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="first-img">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="second-img">        
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="third-img">        
+                    </div>
+                    
+                    <div>
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="first-img">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="second-img">        
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="third-img">       
+                    </div>
+                
+                    <div>
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="first-img">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1-l.jpg" alt="" class="second-img">        
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt="" class="third-img">        
+                    </div>
+					-->
+					
+					
+									<?php 
+				do_shortcode('[gallery id="66" size="large"]');
+
+				$count = count($_SESSION['bucket']);
+				for($i = 0; $i < $count + 1; $i++){
+				?>
+				<div>
+				<img src="<?php echo $_SESSION['bucket'][0]; ?>" alt="" class="first-img">
+				<img src="<?php echo $_SESSION['bucket'][1]; ?>" alt="" class="second-img">
+				<img src="<?php echo $_SESSION['bucket'][2]; ?>" alt="" class="third-img">
+				</div>
+				<?php 
+				}
+				?>
+				
+				
+				
+				
+				
+								<!--
+					<?php 
+					do_shortcode('[gallery id="66" size="large"]');
+					$count = count($_SESSION['bucket']);
+					for($i = 0; $i < $count + 1; $i++){
+					?>
+					
+					<div>
+					<?php 
+					$count = 0;
+					foreach($_SESSION['bucket'] as $key=>$value){ 
+					
+						switch($count){
+						case 0:
+						$style = "first-img";
+						break;
+						
+						case 1:
+						$style = "second-img";
+						break;
+						
+						case 2:
+						$style = "third-img";
+						break;
+						}
+					?>
+					<img src="<?php echo $value; ?>" alt="" class="<?php echo $style; ?>">
+					<?php 
+					
+					$count++;
+					} 
+					
+					?>					
+					</div>
+					<?php 
+					}
+					?>
+					-->
