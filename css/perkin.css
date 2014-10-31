@@ -85,10 +85,19 @@ div.page-1710 div.right-column {
   position: relative;
   left: 350px;
 }
+#header {
+  height: 150px;
+  width: 100%;
+  min-width: 1188px;
+  background: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 99999999;
+}
 #perkin-logo {
-  height: 100px;
+  height: 100%;
   width: auto;
-  margin: 10px auto;
+  margin: 20px auto 20px;
   display: block;
 }
 .main-column .image-container p {
@@ -133,20 +142,6 @@ div.inner-wrapper {
   height: auto;
   margin: 0 auto;
   position: relative;
-}
-#header {
-  height: 100px;
-  width: 100%;
-  min-width: 1188px;
-  background: #fff;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99999999;
-}
-#header a {
-  display: block;
-  margin: 0 auto;
-  width: 576px;
 }
 #slideshow-wrapper {
   display: block;
