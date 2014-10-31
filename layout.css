@@ -268,7 +268,7 @@ h2.strapline {
 
 	font-size:22px !important;
 
-	font-family: Arial;
+	
 
 	text-transform: uppercase;
 
@@ -484,7 +484,7 @@ h1.page-header {
 
 div.top-para p {
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	font-size:18px;
 
@@ -520,7 +520,7 @@ div.three-col-section p {
 
 	font-size:18px;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	padding:0 20px;
 
@@ -644,7 +644,7 @@ div.home-footer {
 
 	font-size:18px;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	width:890px;
 
@@ -746,7 +746,7 @@ div.sidebar-section p, #bookingform div p {
 
 	font-size:14px;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	text-align:center;
 
@@ -764,7 +764,7 @@ form#bookingform {
 
 	font-size:14px;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	font-weight:bold;
 
@@ -880,7 +880,7 @@ div.main-column p {
 
 	padding:0 0px 0 14px;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 	color:#444343;
 
@@ -976,7 +976,7 @@ ul.tweets li {
 
 	display:block;
 
-	font-family:Arial, Helvetica, sans-serif;
+	
 
 }
 
@@ -1358,11 +1358,11 @@ ul.show-on-menu-page li a:hover  {
 
 
 
-#slides span {font-family: arial; text-transform: uppercase; color: #fff; font-size: 20px;}
+#slides span { text-transform: uppercase; color: #fff; font-size: 20px;}
 
-h2.strapline{font-family: arial; text-transform: uppercase; color: #fff; font-size: 20px;}
+h2.strapline{ text-transform: uppercase; color: #fff; font-size: 20px;}
 
-h2.strapline span{font-family: arial; text-transform: uppercase; color: #fff; font-size: 20px;}
+h2.strapline span{text-transform: uppercase; color: #fff; font-size: 20px;}
 
 
 
@@ -1386,7 +1386,7 @@ div.page-144 .booktable {display: none;}
 
 #post-900 p {
 
-font-family: "Light Roman W01 Regular";
+
 
 font-size: 12px;
 
@@ -1400,7 +1400,7 @@ margin-bottom: 1px;
 
 #post-900 h4{
 
-font-family: "Light Roman W01 Regular";
+
 
 font-size: 12px;
 
@@ -1416,7 +1416,7 @@ padding: 0px;
 
 h3.page-feed {
 
-font-family: "Light Roman W01 Regular";
+
 
 font-size: 32px;
 
@@ -1444,7 +1444,7 @@ p.menu-intro-text{
 
 padding: 0 0px 0 14px!important;
 
-font-family: Arial, Helvetica, sans-serif!important;
+
 
 color: #444343!important;
 

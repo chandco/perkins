@@ -90,31 +90,16 @@
 
 </title>
 
+
 <link href="//cloud.webtype.com/css/178901ec-e394-472d-b3bf-0117dfb742dc.css" rel="stylesheet" type="text/css" />
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/layout-2.css" />
 
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/css/perkin.css" />
+
 <style>
-
-.hermesfbregular {
-  font-family: "Hermes FB";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.hermesfbthin {
-  font-family: "Hermes FB Thin";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.hermesfbthinitalic {
-  font-family: "Hermes FB Thin";
-  font-style: italic;
-  font-weight: normal;
-}
 
 
 
@@ -138,7 +123,6 @@ left:-500px;
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/89b90a69-b99b-4637-99a4-ae7d00e80a05.css"/>
 
 <!--[if lt IE 9]>
 
