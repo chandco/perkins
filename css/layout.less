@@ -213,7 +213,7 @@ ul#menu li a.selected, ul#menu li.current-menu-item a span, ul#menu li a:hover {
     width:100%;
     min-width:1280px;
     height:auto;
-    background:url(../images/content-bg.jpg) top left repeat-x #fafaf8;
+    background : #FFF;
 }
 #inner-content {
     width:1005px;
@@ -255,54 +255,69 @@ div.three-col-section {
     height:auto;
     min-height:240px;
     position:relative;
+
+    background:@light-slate;
+
+    padding-bottom: 20px;
+
+
     h3 {
-        color:#fff;
+        color: @dark-slate;
         text-align:center;
         padding:38px 0 0 0;
         font-size:24px;
     }
     p {
-        color:#fff;
+       color: @dark-slate;
         text-align:center;
         font-size:18px;
         width:890px;
         margin:0 auto;
     }
+
+    a {
+    	color: @red;
+    }
+
+  	i.fa-3x {
+  	 	font-size: 50px;
+  	}
+
+  	.social-links {
+  		a {
+  			display: inline-block;
+  			height: 50px;
+  			line-height: 50px;
+  			vertical-align: middle;
+  			margin: 10px;
+
+  			img {
+  				height: 50px;
+  				width: auto;
+  			}
+  		}
+  	}
+
+
+
 }
-div.about-footer {
-    background:url(../images/about_base.jpg) center no-repeat #fff;
+
+#footer {
+	
+	
 }
-div.restaurant-footer {
-    background:url(../images/restaurant_base.jpg) center no-repeat #000;
-}
-div.news-footer {
-    background:url(../images/news_base.jpg) center no-repeat #000;
-}
-div.book-footer {
-    background:url(../images/booking_base.jpg) center no-repeat;
-}
-div.bar-footer {
-    background:url(../images/bar_base.jpg) center no-repeat #000;
-}
-div.menu-footer {
-    background:url(../images/menu_base.jpg) center no-repeat #000;
-}
-div.gallery-footer {
-    background:url(../images/gallery_base.jpg) center no-repeat #000;
-}
-div.contact-footer {
-    background:url(../images/contact_base.jpg) center no-repeat #fff;
-}
+
+
 div.contact-footer h3, div.contact-footer p, div.contact-footer a, div.about-footer a, div.book-footer a {
     color:#000 !important;
 }
 div.home-footer {
-    background:url(../images/home_base.jpg) center no-repeat #000;
+    background:@light-slate;
 }
 #footer-top {
     height:49px;
     width:100%;
-    background:url(../images/footer-top.png) left repeat-x;
+    background:@light-slate;
     position:absolute;
     top:-40px;
 }

@@ -104,21 +104,19 @@ switch($my_page_id){
 
   <p>There’s no need to confine our merrymaking within the walls of the Perkin Reveller!  No matter where you are, you can get in touch, share a story or find out what’s going on at the restaurant, by simply following us on Twitter or checking our Facebook page. </p>
 
-  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/social.png" height="71" width="156" alt="" usemap="#social" class="social">
+  
 
-  <map name="social">
+  <p align='center' class='social-links'>
+  <a href="http://www.perkinreveller.co.uk/newsletter-sign-up/#form" ><img src="http://www.perkinreveller.co.uk/wp-content/uploads/perkin-news.png" alt="Sign up to our newsletter" title="Newsletter" /></a>
+   <a href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-3x fa-facebook-square"></i></a>
 
-    <area shape="rect" coords="25,16,54,65" href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook">
+   <a href="https://twitter.com/PerkinReveller" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-3x fa-twitter-square"></i></a>
+</p>
+  
 
-    <area shape="rect" coords="82,18,130,56" href="https://twitter.com/PerkinReveller" target="_blank" alt="Twitter" title="Twitter">
 
-  </map>
 
-<a style="position: absolute;
-top: 165px;
-left: 685px;" href="http://www.perkinreveller.co.uk/newsletter-sign-up/#form" ><img src="http://www.perkinreveller.co.uk/wp-content/uploads/perkin-news.png" alt="Sign up to our newsletter" title="Newsletter" /></a>
-
-  <p>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email" style="color:#fff; text-decoration:none;">info@perkinreveller.co.uk</a>&nbsp;&nbsp;<span class="red">|</span>&nbsp;&nbsp;<a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces" style="color:#fff; text-decoration:none;">Historic Royal Palaces</a></p>
+  <p>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email">info@perkinreveller.co.uk</a>&nbsp;&nbsp;<span class="red">|</span>&nbsp;&nbsp;<a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces">Historic Royal Palaces</a></p>
 
 </div>
 

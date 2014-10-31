@@ -95,7 +95,7 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/css/perkin.css" />
 
@@ -374,13 +374,13 @@ wp_reset_postdata();
 			
 				
 
-				<a href="#" onclick="return false;" id="prev-btn" class="pager-btn prev"></a> <a href="#" onclick="return false;" id="next-btn" class="pager-btn next"></a>
+				<a href="#" id="prev-btn" class="pager-btn prev"><i class="fa fa-caret-left"></i></a> <a href="#" id="next-btn" class="pager-btn next"><i class="fa fa-caret-right"></i></a>
 
 
 
 				
 
-					<ul class="anyslide">
+					<ul id='carousel-slides' class="anyslide">
 
 						<?php 
 
@@ -394,7 +394,7 @@ wp_reset_postdata();
 
 								<a href="<?php echo $link; ?>" title="<?php echo $value['title']; ?>" >
 
-								<img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=640&h=308&zc=1" alt="" class="gallery-image" border="0"> 
+								<img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=1600&h=400&zc=1" alt="" class="gallery-image" border="0"> 
 
 								<span style="display:none;"><?php echo $value['title']; ?></span>
 
@@ -420,7 +420,27 @@ wp_reset_postdata();
 </div>
 
 
+<script>
 
+$('#carousel-slides').cycle({
+	slides 	: '> li',
+	fx 		: 'fade',
+	delay	: 5000,
+
+});
+
+$('#prev-btn').click(function(e) {
+	e.preventDefault();
+	$('#carousel-slides').cycle('prev');
+});
+
+$('#next-btn').click(function(e) {
+	e.preventDefault();
+	$('#carousel-slides').cycle('next');
+});
+
+
+</script>
 
 
 	
