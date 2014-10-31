@@ -95,7 +95,7 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/layout-2.css" />
+
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/css/perkin.css" />
 
@@ -226,7 +226,15 @@ wp_head();
 
 <div id="page-wrapper">
 
-<div id="header"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.jpg" height="100" width="576" alt=""></a> </div>
+<div id="header"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+
+<object data="<?php echo bloginfo('stylesheet_directory'); ?>/images/perkin-reveller-logo.svg" type="image/svg+xml" id='perkin-logo'>
+  <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/perkin-reveller-logo.png" />
+</object>
+
+</a> </div>
+
+
 
 <!--#header-->
 
