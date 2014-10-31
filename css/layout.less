@@ -7,10 +7,15 @@
 
 	@ends-modifier : (1 - @carousel-height) / 2;
 
-	#menu-container, #header  {
-			height: @px-height * @ends-modifier;
-		    height:@vh-height * @ends-modifier;
+	#menu-container  {
+			height: (@px-height * @ends-modifier);
+		    height: (@vh-height * @ends-modifier);
 	}
+
+    #header  {
+            height: (@px-height * @ends-modifier) * 2;
+            height: (@vh-height * @ends-modifier) * 2;
+    }
 
 	#carousel {
 	    height: @px-height * @carousel-height;
@@ -46,20 +51,22 @@ body.custom-background {
 
 #header {
 	width:100%;
+
     min-width:1188px;
     background:#fff;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    
     position:relative;
     z-index:99999999;
     a {
-        
+         height: 100%;
     }
 }
 
 #perkin-logo {
 	height: 100%;
 	width: auto;
-	margin: 20px auto 20px;
+	margin: auto;
 	display: block;
 
 }
