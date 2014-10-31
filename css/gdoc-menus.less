@@ -2,6 +2,15 @@
 
 .perkin-menu {
 
+
+	.pr-menu-footer {
+		border-top: 1px solid @grey;
+		padding-top:2em;
+		.disclaimer {
+			font-size: 0.7em;
+		}
+	}
+
 	text-align: center;
 	color: @dark-slate;
 
@@ -16,6 +25,41 @@
 
 	h2 {
 		font-weight: normal;
+	}
+
+	ul.repeating {
+
+		list-style-type: none;
+		padding:0;
+		margin: 0.5em auto 1em auto;
+		text-align: center;
+		
+	   
+
+
+		> li {
+			font-size: 0.7em;
+			display: inline-block;
+			vertical-align: top;
+
+			width: 100%;
+			
+			
+			
+			padding: 1%;
+			box-sizing: border-box;
+			text-align: center;
+			margin: 0 auto;
+
+			
+			h3 {
+				font-size: 1.2em;
+				margin: 0 auto;
+				color: @red;
+			}
+
+			
+		}
 	}
 
 	.gdms-group {
@@ -51,42 +95,16 @@
 		
 
 
-		ul.repeating {
+		
 
-			list-style-type: none;
-			padding:0;
-			margin: 2em auto;
-			text-align: center;
-			
-		   
+		
+	}
+
+}
 
 
-			> li {
-				font-size: 0.7em;
-				display: inline-block;
-				vertical-align: top;
-
-				width: 23.5%;
-				
-				
-				
-				padding: 2%;
-				box-sizing: border-box;
-				text-align: center;
-				margin: 2em 0;
-
-				
-				h3 {
-					font-size: 1.2em;
-					margin: 0 auto;
-					color: @red;
-				}
-
-				
-			}
-		}
-
-		&#gmds-snacks {
+/*
+&#gmds-snacks {
 
 			.divider {
 				
@@ -133,6 +151,94 @@
 				}
 			}
 		}
-	}
+		*/
 
+
+.column-stuffs {
+	ul.repeating {
+
+			list-style-type: none;
+			padding:0;
+			margin: 2em auto;
+			text-align: center;
+			
+		   
+
+
+			> li {
+				font-size: 0.7em;
+				display: inline-block;
+				vertical-align: top;
+
+				width: 23.5%;
+				
+				
+				
+				padding: 2%;
+				box-sizing: border-box;
+				text-align: center;
+				margin: 2em 0;
+
+				
+				h3 {
+					font-size: 1.2em;
+					margin: 0 auto;
+					color: @red;
+				}
+
+				
+			}
+		}
+	
+
+}
+
+#gmds-cheese {
+	.gdms-cell-description {
+		display: block;
+		clear: both;
+	}
+}
+
+
+.gmds-sides {
+	ul.repeating {
+
+			list-style-type: none;
+			padding:0;
+			margin: 1em auto;
+			text-align: center;
+			
+		   
+
+
+			> li {
+				font-size: 0.7em;
+				display: inline-block;
+				vertical-align: top;
+
+				width: 19%;
+				
+				
+				
+				padding: 2%;
+				box-sizing: border-box;
+				text-align: center;
+				margin: 1em 0;
+
+				
+				h3 {
+					font-size: 1.2em;
+					margin: 0 auto;
+					color: @red;
+				}
+
+				
+			}
+		}
+}
+
+
+#set-lunch-menu .repeating, #sunday-menu .repeating {
+	i { display: none; }
 }
