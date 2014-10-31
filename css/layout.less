@@ -1,5 +1,43 @@
 
 
+@px-height : 600px;
+@vh-height : 30vh;
+
+	@carousel-height: 0.8;
+
+	@ends-modifier : (1 - @carousel-height) / 2;
+
+	#menu-container, #header  {
+			height: @px-height * @ends-modifier;
+		    height:@vh-height * @ends-modifier;
+	}
+
+	#carousel {
+	    height: @px-height * @carousel-height;
+	    height: @vh-height * @carousel-height;
+	}
+
+
+body.home {
+
+
+	@px-height : 800px;
+
+	@carousel-height: 0.6;
+
+	@ends-modifier : (1 - @carousel-height) / 2;
+
+	#menu-container, #header  {
+			height: @px-height * @ends-modifier;
+		    height:100vh * @ends-modifier;
+	}
+
+	#carousel {
+	    height: @px-height * @carousel-height;
+	    height: 100vh * @carousel-height;
+	}
+}
+
 body.custom-background {
 	background-color: none !important;
 }
@@ -7,8 +45,7 @@ body.custom-background {
 
 
 #header {
-    height:150px;
-    width:100%;
+	width:100%;
     min-width:1188px;
     background:#fff;
     margin-bottom: 20px;
@@ -92,12 +129,11 @@ img#overlay-right {
 a.pager-btn {
     position:absolute;
     z-index:99999998;
-    height:17% !important;
+    
     width:4% !important;
     position:absolute;
     display:block;
     top:32%;
-    height:90px;
     margin:0;
 }
 #prev-btn {
@@ -135,7 +171,7 @@ h2.line-two {
     margin-top:5px;
 }
 #menu-container {
-    height:47px;
+    
     width:100%;
     min-width:1280px;
     position:relative;
