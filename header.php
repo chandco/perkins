@@ -596,9 +596,7 @@ $(function() {
 
 	});
 
-	$("li.cs-hidden").removeClass('cs-hidden');
-
-	$("div.cs-hidden").removeClass('cs-hidden');
+	$(".cs-hidden").removeClass('cs-hidden');
 
 });
 
