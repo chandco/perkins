@@ -105,15 +105,10 @@
 
 /* hide the carousel while jquery loads */
 
-.cs-hidden {
+#slideshow-wrapper.cs-hidden {
 
 display:none;
-
 position:absolute;
-
-top:-500px;
-
-left:-500px;
 
 }
 
@@ -216,7 +211,7 @@ wp_head();
 
 
 
-<body>
+<body <?php body_class($cat); ?>>
 
 
 
@@ -402,67 +397,14 @@ wp_reset_postdata();
 
 ?>
 
-<?php 
-
-//if(get_post_type( $post->ID ) == "gallery"){
-
-if($my_page_id == 11){	
-
-?>
-
-<div class="inner-wrapper">
 
 
 
- <a href="" id="gallery-prev" class="gallery-pager-btn"></a> <a href="" id="gallery-next" class="gallery-pager-btn"></a>
 
-  <div id="gallery">
-
-    <?php foreach($data as $key=>$value): ?>
-
-    <!--
-
-	<img src="./image.php?width=1280&height=798&cropratio=1:1&image=<?php echo $value; ?>" alt="" class="gallery-image">
-
-	-->
-
-	<img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=1280&h=798&zc=1" alt="" class="gallery-image">
-
-    <?php endforeach; ?>
-
-  </div>
-
-</div>
-
-</div>
-
-<?php } ?>
-
-<script type="text/javascript">
-
-$('#gallery').before('').cycle({ 
-
-    fx:     'scrollHorz', 
-
-    speed:  'slow', 
-
-    timeout: 3000, 
-
-    pager:  '.gallery-thumbs',
-
-	pagerAnchorBuilder: function(idx, slide) { 
-
-        return '<li><a href="#" onclick="return false;" class="gal-links"><img src="' + slide.src + '" width="90" height="70" /></a></li>'; 
-
-    } 	
-
-});
-
-</script>
 
 <div id="bannerWrapper">
 
-<?php if($my_page_id !== 11){ ?>
+
 
 <div class="inner-wrapper">
 
@@ -474,13 +416,7 @@ $('#gallery').before('').cycle({
 
 
 
-      <script type="text/javascript">
-
-var a=document.getElementById('slideshow-wrapper');
-
-a.style.height=a.offsetWidth+'px';
-
-</script>
+      
 
 
 
@@ -494,7 +430,7 @@ a.style.height=a.offsetWidth+'px';
 
       <a href="#" onclick="return false;" id="prev-btn" class="pager-btn prev"></a> <a href="#" onclick="return false;" id="next-btn" class="pager-btn next"></a>
 
-      <div id="overlay-container"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/overlay-left.png" id="overlay-left" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/overlay-right.png" id="overlay-right" alt=""> </div>
+      
 
       <div id="slides">
 
@@ -560,55 +496,9 @@ a.style.height=a.offsetWidth+'px';
 
 </div>
 
-<?php } ?>
-
-<script type="text/javascript">
 
 
 
-$(function() {
-
-	$("#slides").jCarouselLite({
-
-		auto: 5000,
-
-		btnNext: ".next",
-
-		btnPrev: ".prev",
-
-		visible: 3,
-
-		speed: 1000,
-
-		//easing: "fadeOut",
-
-		afterEnd: function(li) {
-
-			if (start=true) {
-
-				foo = $(li[1]).find("span").html();
-
-				$("h2.strapline").hide().fadeIn(900).html("<span>"+foo+"</span>");
-
-			}
-
-		}
-
-	});
-
-	$(".cs-hidden").removeClass('cs-hidden');
-
-});
-
-</script> 
-
-<script type="text/javascript">
-
-var a=document.getElementById('slideshow-wrapper');
-
-a.style.height=a.offsetWidth+'px';
-
-</script>
 
 	
 
@@ -645,13 +535,3 @@ wp_nav_menu($menu);
 ?>
 
 </div>
-
-<?php 
-
-//echo get_post_type($post->ID);
-
-//dynamic_sidebar('top-feature');  
-
-//if ( function_exists( 'meteor_slideshow' ) ) { 
-
-//meteor_slideshow("Cool","")  
