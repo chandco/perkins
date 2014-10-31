@@ -158,19 +158,19 @@ wp_head();
 
 ?>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-latest.pack.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jcarousellite_1.0.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jcarousellite.min.js"></script>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.easing.1.3.js"></script>
 
 
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.latest.js"></script>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slider-calls.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slider-calls.js"></script>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/backtotop.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/backtotop.js"></script>
 
 
 
