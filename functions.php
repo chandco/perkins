@@ -45,8 +45,13 @@ function number_of_responses() {
 }
 
 
+function remove_background_colours() {
 
 
+remove_theme_support( 'custom-background' ) ;
+
+}
+add_action( 'after_setup_theme', 'remove_background_colours', 11 ); 
 
 
 

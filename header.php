@@ -199,7 +199,6 @@ wp_head();
 
 
 
-<script type="text/javascript" src="../../image.php"></script>
 
 
 
@@ -243,29 +242,6 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 
 
-if($my_page_id == 10){
-
-$menu_style = "
-
-<style>
-
-.main-column table{ position: relative; left: 20px;}
-
-.main-column h3 { position: relative; left: 20px; width: 500px; text-align:center; border-bottom: 1px #000 solid; color: #ee3124;}
-
-.main-column table tr td:nth-child(2){ width: 50px; border-left: 1px dotted #000; text-align: right; }
-
-.main-column table tr td:nth-child(1){ width: 450px;}
-
-.main-column table tr{width: 500px; margin-bottom: 15px;} 
-
-</style>
-
-";
-
-echo $menu_style;
-
-}
 
 
 
@@ -370,130 +346,77 @@ while ( $meteor_loop->have_posts() ) : $meteor_loop->the_post();
 $meteor_shim = wp_get_attachment_image_src( get_post_thumbnail_id(), 'featured-slide');
 
 
-
 //$images[] = $meteor_shim[0];
-
 
 
 $data[] = array(
 
 'images'=> $meteor_shim[0],
-
 'title' => $post->post_title,
-
 'link'	=> get_post_meta($post->ID, "slide_url_value", $single = true)
 
 );
 
 endwhile;
-
 wp_reset_postdata();
-
 //echo "<pre>";
-
 //print_r($data);
-
 //echo "</pre>";
-
 ?>
 
 
 
 
 
+<div id="carousel">
+	
+		
+			
+				
 
-<div id="bannerWrapper">
-
-
-
-<div class="inner-wrapper">
-
- <div id="placeholder" style="height: 307px; background: url('http://www.perkinreveller.co.uk/images/dummy-slider.jpg'); background-position: -1px 0px;" >
-
- <div id="slideshow-wrapper" class="cs-hidden">
-
-    <div id="slideshow-container"> 
+				<a href="#" onclick="return false;" id="prev-btn" class="pager-btn prev"></a> <a href="#" onclick="return false;" id="next-btn" class="pager-btn next"></a>
 
 
 
-      
+				
+
+					<ul class="anyslide">
+
+						<?php 
+
+						$cs_hack = false;
+
+						foreach($data as $key=>$value): ?>
+
+
+							<li>
+								<?php $link = ( !empty( $value['link'] ) ) ? $value['link'] : "javascript:void();"; ?>
+
+								<a href="<?php echo $link; ?>" title="<?php echo $value['title']; ?>" >
+
+								<img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=640&h=308&zc=1" alt="" class="gallery-image" border="0"> 
+
+								<span style="display:none;"><?php echo $value['title']; ?></span>
+
+								</a>
+
+							</li>
+
+						<?php endforeach; ?>
+
+					</ul>
+
+				
+
+			
 
 
 
-      <div class="strapline-container">
-
-        <h2 class="strapline"><span>The Perkin Spirit</span></h2>
-
-        <!--<h2 class="strapline line-two"><span>OF GOOD FOOD...</span></h2>-->
-
-      </div>
-
-      <a href="#" onclick="return false;" id="prev-btn" class="pager-btn prev"></a> <a href="#" onclick="return false;" id="next-btn" class="pager-btn next"></a>
-
-      
-
-      <div id="slides">
-
-        <ul class="anyslide">
-
-          <?php 
-
-		  $cs_hack = false;
-
-		  foreach($data as $key=>$value): ?>
-
-          <!--
-
-		  <li><img src="./image.php?width=640&height=308&cropratio=2:1&image=<?php echo $value; ?>" alt="" class="gallery-image" border="0"> </li>
-
-		  -->
-
-          <?php
-
-		  
-
-				if ($cs_hack)
-
-				{ 
-
-					echo "<li class='cs-hidden'>";
-
-				} else {
-
-					echo "<li>";
-
-				}
-
-				$cs_hack = true; // from now on everything in the loop will apply hidden class
-
-		 ?>
-
-		  <?php $link = (!empty($value['link']))? $value['link'] : "javascript:void();"; ?>
-
-		  <a href="<?php echo $link; ?>" title="<?php echo $value['title']; ?>" >
-
-		  <img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=640&h=308&zc=1" alt="" class="gallery-image" border="0"> 
-
-		  <span style="display:none;"><?php echo $value['title']; ?></span>
-
-		  </a>
-
-		  </li>
-
-          <?php endforeach; ?>
-
-        </ul>
-
-      </div>
-
-    </div>
+		
 
 
 
-  </div>
-
-  </div>
-
+	
 </div>
 
 
