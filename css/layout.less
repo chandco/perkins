@@ -10,16 +10,19 @@
 	#menu-container  {
 			height: (@px-height * @ends-modifier);
 		    height: (@vh-height * @ends-modifier);
+            min-height: 100px;
 	}
 
     #header  {
             height: (@px-height * @ends-modifier) * 2;
             height: (@vh-height * @ends-modifier) * 2;
+            min-height: 100px;
     }
 
 	#carousel {
 	    height: @px-height * @carousel-height;
 	    height: @vh-height * @carousel-height;
+        min-height: 300px;
 	}
 
 
@@ -52,7 +55,7 @@ body.custom-background {
 #header {
 	width:100%;
 
-    min-width:1188px;
+    
     background:#fff;
     padding: 20px 0;
     
@@ -115,7 +118,7 @@ img, a {
     width:100%;
 }
 #overlay-container {
-    min-width:1100px;
+    
     height:auto;
     position:relative;
 }
@@ -180,7 +183,7 @@ h2.line-two {
 #menu-container {
     
     width:100%;
-    min-width:1280px;
+    
     position:relative;
 }
 #gallery, #gallery img {
@@ -254,12 +257,15 @@ ul#menu li a.selected, ul#menu li.current-menu-item a span, ul#menu li a:hover {
 
 #content {
     width:100%;
-    min-width:1280px;
+
+    max-width: 1050px;
+    margin: auto;
+    
     height:auto;
     background : #FFF;
 }
 #inner-content {
-    width:1005px;
+    
     margin:0 auto;
     padding:20px 0;
     position:relative;
@@ -292,85 +298,8 @@ div.three-col-section {
         padding:0 20px;
     }
 }
-#footer {
-    width:100%;
-    min-width:1280px;
-    height:auto;
-    min-height:240px;
-    position:relative;
-
-    background:@light-slate;
-
-    padding-bottom: 20px;
 
 
-    h3 {
-        color: @dark-slate;
-        text-align:center;
-        padding:38px 0 0 0;
-        font-size:24px;
-    }
-    p {
-       color: @dark-slate;
-        text-align:center;
-        font-size:18px;
-        width:890px;
-        margin:0 auto;
-    }
-
-    a {
-    	color: @red;
-    }
-
-  	i.fa-3x {
-  	 	font-size: 50px;
-  	}
-
-  	.social-links {
-  		a {
-  			display: inline-block;
-  			height: 50px;
-  			line-height: 50px;
-  			vertical-align: middle;
-  			margin: 10px;
-
-  			img {
-  				height: 50px;
-  				width: auto;
-  			}
-  		}
-  	}
-
-
-
-}
-
-#footer {
-	
-	
-}
-
-
-div.contact-footer h3, div.contact-footer p, div.contact-footer a, div.about-footer a, div.book-footer a {
-    color:#000 !important;
-}
-div.home-footer {
-    background:@light-slate;
-}
-#footer-top {
-    height:49px;
-    width:100%;
-    background:@light-slate;
-    position:absolute;
-    top:-40px;
-}
-div.about-footer h3, div.about-footer p, div.book-footer h3, div.book-footer p {
-    color:#000 !important;
-}
-img.social {
-    margin:0 auto;
-    display:block;
-}
 .red {
     color:#ee2e24;
 }
@@ -387,10 +316,10 @@ div.sidebar-section {
     background:#fff;
     margin:0 0 20px 0;
     padding:5px 5px 5px 5px;
-    border:1px solid #f8f8f6;
-    -moz-box-shadow: 1px 0px 6px #ccc;
-    -webkit-box-shadow: 1px 0px 6px #ccc;
-    box-shadow: 1px 0px 6px #ccc;
+    border:1px solid #eeeeee;
+    
+
+
     position:relative;
     h3 {
         font-size:26px!important;
@@ -453,7 +382,7 @@ div.main-column {
     padding:0 0px 0 80px;
     position:relative;
     p {
-        padding:0 0px 0 14px;
+        
         color:#444343;
         font-size:18px;
         small {
@@ -491,29 +420,7 @@ h1.mcheader {
         color:#444343;
     }
 }
-div.image-container {
-    background:#fff;
-    text-align:center;
-    width:527px;
-    height:346px;
-    padding:12px;
-    position:relative;
-    margin:0 auto;
-    margin-top:50px;
-    margin-bottom:5px;
-    -moz-box-shadow: 1px 0px 6px #ccc;
-    -webkit-box-shadow: 1px 0px 6px #ccc;
-    box-shadow: 1px 0px 6px #ccc;
-}
-div.sticker {
-    height:82px;
-    width:82px;
-    margin:0 auto;
-    position:absolute;
-    background:url(../images/redsticker.png);
-    left:236px;
-    top:-30px;
-}
+
 img.shareicons {
     margin:0 0 0 10px;
 }
@@ -749,9 +656,9 @@ h3.page-feed {
     font-size: 32px;
     line-height: 1;
     margin:auto;
-    padding: 0px;
+    
     display: block;
-    text-align: center;
+    text-align: left;
     a {
         text-decoration: none;
         color: #ee2e24;

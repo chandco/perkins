@@ -1,0 +1,162 @@
+.perkin-menu {
+  text-align: center;
+  color: #414042;
+}
+.perkin-menu .pr-menu-footer {
+  border-top: 1px solid #dddcd4;
+  padding-top: 2em;
+}
+.perkin-menu .pr-menu-footer .disclaimer {
+  font-size: 0.7em;
+}
+.perkin-menu h3 {
+  font-weight: normal;
+}
+.perkin-menu i {
+  font-style: normal;
+  color: #da4d4e;
+}
+.perkin-menu h2 {
+  font-weight: normal;
+}
+.perkin-menu ul.repeating {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5em auto 1em auto;
+  text-align: center;
+}
+.perkin-menu ul.repeating > li {
+  font-size: 0.7em;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+.perkin-menu ul.repeating > li h3 {
+  font-size: 1.2em;
+  margin: 0 auto;
+  color: #da4d4e;
+}
+.perkin-menu .gdms-group div.group-title {
+  position: relative;
+}
+.perkin-menu .gdms-group div.group-title h2 {
+  text-align: center;
+  position: relative;
+  background: #fff;
+  display: inline-block;
+  z-index: 1;
+  padding: 0 10px;
+}
+.perkin-menu .gdms-group div.group-title .divider {
+  display: block;
+  width: 100%;
+  border-bottom: solid 1px #da4d4e;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+/*
+&#gmds-snacks {
+
+			.divider {
+				
+				display: none;
+			}
+
+			h2 {
+				&:after {
+					content:" - ";
+					position: absolute;
+					top: 50%;
+					transform:translateY(-50%);
+					right:100%;
+					width: 10px;
+					color: @red;
+				}
+
+				&:before {
+					content:" - ";
+					position: absolute;
+					top: 50%;
+					transform:translateY(-50%);
+					left:100%;
+					width: 10px;
+					color: @red;
+				}
+
+
+				background: none;
+
+
+			}
+			ul.repeating {
+				column-count: 3;
+			    column-gap: 10%;
+			    column-rule: 1px outset @red;
+
+			    li {
+			    min-height: 50px; // bad but generally hopes for solid layout
+				 break-inside: avoid;
+
+				 width: 100%;
+
+				}
+			}
+		}
+		*/
+.column-stuffs ul.repeating {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em auto;
+  text-align: center;
+}
+.column-stuffs ul.repeating > li {
+  font-size: 0.7em;
+  display: inline-block;
+  vertical-align: top;
+  width: 23.5%;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2em 0;
+}
+.column-stuffs ul.repeating > li h3 {
+  font-size: 1.2em;
+  margin: 0 auto;
+  color: #da4d4e;
+}
+#gmds-cheese .gdms-cell-description {
+  display: block;
+  clear: both;
+}
+.gmds-sides ul.repeating {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em auto;
+  text-align: center;
+}
+.gmds-sides ul.repeating > li {
+  font-size: 0.7em;
+  display: inline-block;
+  vertical-align: top;
+  width: 19%;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 1em 0;
+}
+.gmds-sides ul.repeating > li h3 {
+  font-size: 1.2em;
+  margin: 0 auto;
+  color: #da4d4e;
+}
+#set-lunch-menu .repeating i,
+#sunday-menu .repeating i {
+  display: none;
+}

@@ -96,7 +96,16 @@ switch($my_page_id){
 
 
 
-<div id="footer" class="<?php echo $style; ?>">
+
+</div>
+
+<!-- END: Page Wrapper --> 
+
+
+
+
+
+<footer id="footer" role='footer' class="<?php echo $style; ?>">
 
   <div id="footer-top"></div>
 
@@ -107,31 +116,22 @@ switch($my_page_id){
   
 
   <p align='center' class='social-links'>
-  <a href="http://www.perkinreveller.co.uk/newsletter-sign-up/#form" ><img src="http://www.perkinreveller.co.uk/wp-content/uploads/perkin-news.png" alt="Sign up to our newsletter" title="Newsletter" /></a>
-   <a href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-3x fa-facebook-square"></i></a>
+  <a href="http://www.perkinreveller.co.uk/newsletter-sign-up/#form" ><i class="fa fa-newspaper-o"></i></a>
+   <a href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook"><i class="fa  fa-facebook"></i></a>
 
-   <a href="https://twitter.com/PerkinReveller" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-3x fa-twitter-square"></i></a>
+   <a href="https://twitter.com/PerkinReveller" target="_blank" alt="Twitter" title="Twitter"><i class="fa  fa-twitter"></i></a>
 </p>
   
 
 
 
-  <p>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email">info@perkinreveller.co.uk</a>&nbsp;&nbsp;<span class="red">|</span>&nbsp;&nbsp;<a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces">Historic Royal Palaces</a></p>
+  <p class='contact-info'>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email">info@perkinreveller.co.uk</a>&nbsp;&nbsp;<span class="red">|</span>&nbsp;&nbsp;<a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces">Historic Royal Palaces</a></p>
 
-</div>
-
-</div>
-
-<!-- END: Page Wrapper --> 
+</footer>
 
 
 
-
-
-
-
-
-
+<?php wp_footer(); ?>
 </body>
 
 

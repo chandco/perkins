@@ -4,6 +4,8 @@
 
 // This theme uses wp_nav_menu() in one location.
 
+require_once("library/gallery.php");
+
 $path = "http://www.perkinreveller.co.uk/wp-content/themes/twentyeleven";
 
 function home_page_menu_args( $args ) {
@@ -21,6 +23,7 @@ return $args;
 }
 
 
+add_filter('show_admin_bar', '__return_false');
 
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
 
@@ -222,3 +225,12 @@ add_filter( 'attachment_fields_to_edit', 'image_sizes_attachment_fields_to_edit'
 if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))
 
     add_action('wp', create_function('', '@ob_end_clean();@ini_set("zlib.output_compression", 1);'));
+
+
+
+function perkin_enqueue_scripts() {
+	wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . "/js/magnific-popup.js", array('jquery'), 1, true );
+	wp_enqueue_script( 'perkin-main', get_stylesheet_directory_uri() . "/js/main-dist.js", array('jquery', 'magnific-popup'), 1, true );
+}
+
+add_action("wp_enqueue_scripts","perkin_enqueue_scripts");

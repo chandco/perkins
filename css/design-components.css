@@ -1,0 +1,23 @@
+div.image-container {
+  background: #fff;
+  text-align: center;
+  width: 527px;
+  height: 346px;
+  padding: 12px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  -moz-box-shadow: 1px 0px 6px #ccc;
+  -webkit-box-shadow: 1px 0px 6px #ccc;
+  box-shadow: 1px 0px 6px #ccc;
+}
+div.sticker {
+  height: 82px;
+  width: 82px;
+  margin: 0 auto;
+  position: absolute;
+  background: url(../images/redsticker.png);
+  left: 236px;
+  top: -30px;
+}

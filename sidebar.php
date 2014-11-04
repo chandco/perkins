@@ -18,7 +18,7 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 	<h2 class="widgettitle">MENUS</h2>
 
-<img src="http://www.perkinreveller.co.uk/wp-content/themes/perkins/images/formsplitter.jpg" style="position: relative; top:-10px;" />
+
 
 	<ul class="show-on-menu-page">
 
@@ -44,7 +44,7 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 	<h2 class="widgettitle">Bar Menus</h2>
 
-<img src="http://www.perkinreveller.co.uk/wp-content/themes/perkins/images/formsplitter.jpg" style="position: relative; top:-10px;" />
+
 
 	<ul class="show-on-menu-page">
 
@@ -78,7 +78,8 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 	<h2 class="widgettitle">BOOK A TABLE</h2>
 
-<img src="http://www.perkinreveller.co.uk/wp-content/themes/perkins/images/formsplitter.jpg" style="position: relative; top:-10px;" />
+
+
 
 <div align="center">
 
