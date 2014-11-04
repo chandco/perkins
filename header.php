@@ -193,7 +193,6 @@ wp_enqueue_script( 'comment-reply' );
 
 */
 
-wp_head();
 
 ?>
 
@@ -422,22 +421,6 @@ wp_reset_postdata();
 
 <script>
 
-$('#carousel-slides').cycle({
-	slides 	: '> li',
-	fx 		: 'fade',
-	delay	: 5000,
-
-});
-
-$('#prev-btn').click(function(e) {
-	e.preventDefault();
-	$('#carousel-slides').cycle('prev');
-});
-
-$('#next-btn').click(function(e) {
-	e.preventDefault();
-	$('#carousel-slides').cycle('next');
-});
 
 
 </script>

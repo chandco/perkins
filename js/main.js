@@ -52,7 +52,7 @@ jQuery(function($) {
 
     }
 
-    console.log("ehllo");
+
 
 
     // load gallery scripts if there is a gallery.
@@ -64,5 +64,53 @@ jQuery(function($) {
     $('ul.clients-gallery.popup').exists(function() {
          $(this).magnificPopup(popup.clients);
     });
+
+
+    var cycleOptions = {
+
+    slides  : '> li',
+    fx      : 'fade',
+    delay   : 5000,
+
+    }
+
+    var $slides = $('#carousel-slides').cycle(cycleOptions);
+
+
+
+    $('#prev-btn').click(function(e) {
+        e.preventDefault();
+       $slides.cycle('prev');
+    });
+
+    $('#next-btn').click(function(e) {
+        e.preventDefault();
+        $slides.cycle('next');
+    });
+
+    var delayCycleResize = (function () {
+      var timers = {};
+      return function (callback, ms, uniqueId) {
+        if (!uniqueId) {
+          uniqueId = "Don't call this twice without a uniqueId";
+        }
+        if (timers[uniqueId]) {
+          clearTimeout (timers[uniqueId]);
+        }
+        timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
+
+
+    $(window).resize( function() {
+         delayCycleResize(function(){
+            //console.log("resize finished");
+              $slides.cycle('destroy').cycle(cycleOptions).cycle('resume');
+              
+                }, 500, "cycleResizeDelay");
+            //console.log("resize event");
+        
+    } );
+
 
 })
