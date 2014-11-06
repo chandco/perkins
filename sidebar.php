@@ -55,14 +55,27 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
    } 
 
    //                          category ¬              action ¬            label ¬           value ¬    
+   ga('send','event', {
 
-   _gaq.push(['_trackEvent',   eventData.category,     eventData.action,   eventData.label,        1 ]); 
+   		'eventCategory' : eventData.category.toString(), 
+   		'eventAction' : eventData.action.toString(), 
+   		'eventLabel' : eventData.label.toString(), 
+   		'eventValue' : 1, 
+   		'hitCallback': function() {
+	       		console.log('Sent!!');
+		    	//callback function
+		    	window.location=href;
+		    },
+   		'hitCallbackFail' : function () {
+   			console.log("Unable to send Google Analytics data");
+   			//callback function
+   			window.location=href;
+   		}
+   	});
+   
+   // 
 
-         window.setTimeout(function(){
-
-       window.location=href;
-
-   },300);
+   
 
     
 
