@@ -11,69 +11,6 @@ $my_page_id  = $wp_query->get_queried_object_id();
 ?>
 
 
-
-
-
-<div class="sidebar-section" id="food-menu">
-
-	<h2 class="widgettitle">MENUS</h2>
-
-
-
-	<ul class="show-on-menu-page">
-
-		<li><a href="/lunch-menu/">Lunch</a></li>
-
-		<li><a href="/a-la-carte/">Dinner</a></li>
-
-		<li><a href="/desserts/">Desserts</a></li>
-
-		<li><a href="/afternoon-tea/">Afternoon Tea</a></li>
-
-<li><a href="/sunday-lunch/">Sunday Menu</a></li>	
-
-	</ul>
-
-<div style="clear: both;"></div>
-
-</div>
-
-
-
-<div class="sidebar-section" id="drinks-menu">
-
-	<h2 class="widgettitle">Bar Menus</h2>
-
-
-
-	<ul class="show-on-menu-page">
-
-		<li><a href="/bar-food/">Bar Food</a></li>
-
-		<li><a href="/wine-list/">Wine List</a></li>
-
-		<li><a href="/punch-bowls/">Punch Bowls</a></li>
-
-		<li><a href="/gin-mills/">Gin Mill</a></li>
-
-		<li><a href="/prohibition/">Prohibition</a></li>
-
-		<li><a href="/vintage-cocktails/">Vintage</a></li>
-
-                <li><a href="/tiki-dancefloor/">Tiki Bar</a></li>
-
-		<li><a href="/beer-street/">Beer Street</a></li>
-
-               	
-
-	</ul>
-
-<div style="clear: both;"></div>
-
-</div>
-
-
-
 <div class="sidebar-section booktable" >
 
 	<h2 class="widgettitle">BOOK A TABLE</h2>
@@ -145,11 +82,75 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 
 
-<p style="margin-top: 15px; font-size: 22px;">+44 (0)20 3166 6949</p>
+<p style="margin-top: 15px; "><a href='tel:+442031666949'>+44 (0)20 3166 6949</a></p>
 
-<p style="margin-top: 15px; font-size: 22px;"><a href="mailto:info@perkinreveller.co.uk?subject=booking enquiry">info@perkinreveller.co.uk</a></p>
+<p style="margin-top: 15px; "><a href="mailto:info@perkinreveller.co.uk?subject=booking enquiry">info@perkinreveller.co.uk</a></p>
 
 </div>
+
+
+
+<div class="sidebar-section" id="food-menu">
+
+	<h2 class="widgettitle">MENUS</h2>
+
+
+
+	<ul class="show-on-menu-page">
+
+		<li><a href="/lunch-menu/">Lunch</a></li>
+
+		<li><a href="/a-la-carte/">Dinner</a></li>
+
+		<li><a href="/desserts/">Desserts</a></li>
+
+		<li><a href="/afternoon-tea/">Afternoon Tea</a></li>
+
+<li><a href="/sunday-lunch/">Sunday Menu</a></li>	
+
+	</ul>
+
+<div style="clear: both;"></div>
+
+</div>
+
+
+
+<div class="sidebar-section" id="drinks-menu">
+
+	<h2 class="widgettitle">Bar Menus</h2>
+
+
+
+	<ul class="show-on-menu-page">
+
+		<li><a href="/bar-food/">Bar Food</a></li>
+
+		<li><a href="/wine-list/">Wine List</a></li>
+
+		<li><a href="/punch-bowls/">Punch Bowls</a></li>
+
+		<li><a href="/gin-mills/">Gin Mill</a></li>
+
+		<li><a href="/prohibition/">Prohibition</a></li>
+
+		<li><a href="/vintage-cocktails/">Vintage</a></li>
+
+                <li><a href="/tiki-dancefloor/">Tiki Bar</a></li>
+
+		<li><a href="/beer-street/">Beer Street</a></li>
+
+               	
+
+	</ul>
+
+<div style="clear: both;"></div>
+
+</div>
+
+
+
+
 
 
 
@@ -157,9 +158,16 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 	<h2 class="widgettitle">TWITTER</h2>
 
-<a class="twitter-timeline" href="https://twitter.com/PerkinReveller" data-widget-id="261083629164298241">Tweets by @PerkinReveller</a>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline" 
+	data-dnt="true" 
+	href="https://twitter.com/PerkinReveller" 
+	data-widget-id="530366764157108225"
+	data-border-color="#ffffff"
+>Tweets by @PerkinReveller</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 
 

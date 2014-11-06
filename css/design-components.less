@@ -37,3 +37,64 @@ div.sticker {
     transform:translateX(-50%);
     top:-30px;
 }*/
+
+a[href^="tel:"] {
+    // phone numbers
+    text-decoration: none;
+    &:before {
+        .fa();
+        content: @fa-var-phone;
+        margin-right: 0.5em;
+    }
+}
+
+a[href^="mailto:"] {
+    // phone numbers
+    text-decoration: none;
+    &:before {
+        .fa();
+        content: @fa-var-envelope;
+        margin-right: 0.5em;
+    }
+}
+
+#inner-content {
+    .OTButton {
+
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0;
+
+        .OTReserveNow {
+            background-image: none;
+            background: @red;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 2px 0;
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background .3s ease;
+            &:hover {
+                background: @bubblegum;
+            }
+            #OTReserveNow {
+                text-align: center;
+                text-shadow:none;
+                span.OTReserveNowInner {
+                    padding: 10px 0;
+                    font-size: 1.2em;
+                    text-shadow:none;
+                    text-transform: uppercase;
+                    .hermes();
+                    color: #fff;
+                    &:before {
+                        .fa();
+                        content: @fa-var-calendar;
+                        margin-right: 1em;
+                    }
+                } 
+            }
+        }
+    }
+}

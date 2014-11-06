@@ -304,25 +304,61 @@ div.sidebar-section {
     width:100%;
     background:#fff;
     margin:0 0 20px 0;
-    padding:5px 5px 5px 5px;
-    border:1px solid #eeeeee;
+    box-sizing: border-box;
+    padding:2%;
+    border:1px solid @light-slate;
     
 
 
     position:relative;
     h3 {
-        font-size:26px!important;
-        color:#444343!important;
+        
         margin:10px;
         text-align:center;
-        font-size:18px;
+        font-size:1em;
     }
     h2 {
-        font-size:32px;
-        color:#444343;
+        
+        color: @light-slate;
+        font-size:1.3em;
+        
         margin:10px;
+        width: 100%;
         text-align:center;
-        text-transform: lowercase;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    ul.show-on-menu-page {
+        margin: 0;
+        padding: 10%;
+        width: 100%;
+        left: 5%;
+        position: relative;
+        box-sizing: border-box;
+
+
+    
+        list-style-type: none;
+        
+        overflow:hidden;
+        
+        li {
+            float: left;
+            width:50%;
+            display:inline;
+            padding-bottom: 2px;
+            a {
+                text-decoration:none;
+                color:#444343;
+                font-size:14px;
+            }
+            a:hover {
+                color:#ee2e24 !important;
+                border-bottom:1px solid #ee2e24;
+            }
+        }
+
     }
 }
 div.sidebar-section p, #bookingform div p {
@@ -570,28 +606,7 @@ h2.OT_subtitle {
     left:20px;
     position:relative;
 }
-ul.show-on-menu-page {
-    width: 300px;
-    list-style-type: none;
-    margin-bottom:20px;
-    overflow:hidden;
-    margin-top: -10px;
-    li {
-        float: left;
-        width:50%;
-        display:inline;
-        padding-bottom: 2px;
-        a {
-            text-decoration:none;
-            color:#444343;
-            font-size:14px;
-        }
-        a:hover {
-            color:#ee2e24 !important;
-            border-bottom:1px solid #ee2e24;
-        }
-    }
-}
+
 a.menus {
     color: #000;
 }
