@@ -83,7 +83,7 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 <div align="center">
 
-	<div class="OTButton"><script type="text/javascript" src="http://www.toptable.co.uk/ism/link.aspx?rid=91155&restref=91155&bgimage=http://www.toptable.co.uk/img/frontDoor/ot_btn_red.png&hover=1"></script><noscript id="OT_noscript"><a href="http://www.toptable.co.uk/perkin-reveller-reservations-london?rtype=ism&restref=91155" >Reserve now on toptable.co.uk</a></noscript>
+	<div class="OTButton"><script type="text/javascript" src="http://www.toptable.co.uk/ism/link.aspx?rid=91155&restref=91155&bgimage=http://www.staging.perkinreveller.co.uk.gridhosted.co.uk/wp-content/themes/perkins/images/reserve-now.png&hover=1"></script><noscript id="OT_noscript"><a href="http://www.toptable.co.uk/perkin-reveller-reservations-london?rtype=ism&restref=91155" >Reserve now on toptable.co.uk</a></noscript>
 
 
 
