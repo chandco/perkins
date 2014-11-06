@@ -46,6 +46,8 @@ img.third-img {
 
 
 
+
+
 #carousel {
     
      //background: @bubblegum;
@@ -56,17 +58,37 @@ img.third-img {
      position: relative;
 
 
+        #prev-btn {
+            left:15%;
+           
+        }
+        #next-btn {
+            right:15%;
+        
+        }
+
+
      #prev-btn, #next-btn {
         position: absolute;
         top: 50%;
         transform:translateY(-50%);
-
+        z-index: 100;
         color: #fff;
 
         font-size: 5em;
 
 
-     }
+        position:absolute;
+
+
+        width:4% !important;
+        position:absolute;
+        display:block;
+        top:32%;
+        margin:0;
+    }
+
+
     ul {
 
         margin:0;
