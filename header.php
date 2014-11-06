@@ -221,9 +221,7 @@ wp_enqueue_script( 'comment-reply' );
 
 <div id="header"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-<object data="<?php echo bloginfo('stylesheet_directory'); ?>/images/perkin-reveller-logo.svg" type="image/svg+xml" id='perkin-logo'>
-  <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/perkin-reveller-logo.png" />
-</object>
+<?php include( get_stylesheet_directory() . "/images/perkin-reveller-logo.svg" ); ?>
 
 </a> </div>
 

@@ -107,7 +107,7 @@ switch($my_page_id){
 
 <footer id="footer" role='footer' class="<?php echo $style; ?>">
 
-  <div id="footer-top"></div>
+ 
 
   <h3 class="page-header">BE SOCIAL, IT'S THE <span class="red">PERKIN SPIRIT</span>!</h3>
 
