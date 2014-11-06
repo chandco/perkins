@@ -88,7 +88,7 @@
 
 				<h2><?php the_title(); ?></h2>
 
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/splitter-2.png" alt="">
+				
 
 				
 
@@ -100,7 +100,7 @@
 
 				</p>
 
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym1.png" alt="">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym1.png" alt="" class='sym'>
 
 				</div>
 
@@ -126,7 +126,7 @@
 
                         <h2><?php the_title(); ?></h2>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/splitter-2.png" alt="">
+                       
 
                       <p>
 
@@ -136,7 +136,7 @@
 
 					  </p>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym2.png" alt="">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym2.png" alt="" class='sym'>
 
 						<?php endwhile; wp_reset_postdata(); ?>
 
@@ -166,7 +166,7 @@
 
                         <h2><?php the_title(); ?></h2>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/splitter-2.png" alt="">
+                       
 
 						<p>
 
@@ -176,7 +176,7 @@
 
 						</p>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym3.png" alt="">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym3.png" alt="" class='sym'>
 
 						<?php endwhile; wp_reset_postdata(); ?>                        
 
