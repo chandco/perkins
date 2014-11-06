@@ -14,6 +14,15 @@
 
 
 jQuery(function($) { 
+
+    $("#navigation-dropdown").click(function(e) {
+        e.preventDefault();
+        $("#menu-container").toggleClass("closed");
+        $("#navigation-dropdown i").toggleClass('fa-bars').toggleClass('fa-caret-up');
+       
+    })
+
+
     var popup = {
         gallery : {
                     type:'image', 

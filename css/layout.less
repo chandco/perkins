@@ -22,7 +22,8 @@
 
          display:table;
         .menu-primary-container {
-             display:table-cell;
+            width: 100%;
+            display:table-cell;
             vertical-align: middle;
         }
 }
@@ -32,7 +33,10 @@
 
 #header  {
 
-    width:100%;
+    width:45%;
+    margin: auto;
+    left: 0;
+    right: 0;
 
     
     
@@ -52,6 +56,9 @@
     z-index: 10;
     height: (@carousel-height-px * 0.6);
     height: (@carousel-height * 0.6);
+
+     
+
 
 
 
@@ -74,6 +81,8 @@
     z-index: 5;
     height: @carousel-height-px;
     height: @carousel-height;
+
+    
 }
 
 
@@ -117,6 +126,10 @@ body.home {
 	#carousel {
 	    height: @carousel-height-px;
 	    height: @carousel-height;
+        @media screen and (max-width: 800px) {
+            height: @carousel-height-px / 2;
+            height: @carousel-height / 2;
+        }
 	}
 }
 
@@ -201,10 +214,10 @@ a.pager-btn {
     margin:0;
 }
 #prev-btn {
-    left:21%;
+    left:15%;
 }
 #next-btn {
-    right:21%;
+    right:15%;
 }
 div.strapline-container {
     position:absolute;
@@ -595,7 +608,12 @@ div.page-144 {
 }
 .twitter {
     #twitter-widget-0 {
-        width: 333px!important;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        display: block;
     }
 }
 #post-900 {

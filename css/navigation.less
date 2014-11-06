@@ -1,9 +1,57 @@
 
 
+#navigation-dropdown {
+    display: none;
+}
 @media screen and (max-width: 800px) {
-    .menu-primary-container, #menu-container {
+
+    #navigation-dropdown {
+        display: block;
+        margin: auto;
+        background: none;
+        border: none;
+        font-family: "Hermes";
+        text-transform: uppercase;
+        font-size: 2em;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2% 5%;
+        text-align: left;
+        cursor: pointer;
+        border-bottom: 2px solid @light-slate;
+    }
+
+    body.home #menu-container {
+        min-height: 0;
+    }
+
+    
+
+    #menu-container {
+
+        min-height: 0;
+
         display: block;
 
+        .menu-primary-container {
+            display: block;
+        }
+
+    }
+
+
+}
+
+#menu-container {
+   
+        &.closed {
+
+             #menu {
+                 max-height: 0;
+                 overflow: hidden;
+
+             }
+    
     }
 }
 
@@ -16,8 +64,14 @@
     margin:10px auto;
     position:relative;
 
+    width: 100%;
+
     text-transform: uppercase;
     text-align: center;
+
+    max-height: 9999px;
+    transition: max-height .5s ease;
+    
 
 
 
@@ -26,22 +80,28 @@
         display: inline-block;
         a {
            
-            margin:6px 0 46px 0;
+            //margin:6px 0 46px 0;
             padding:0 20px;
             border-right:2px solid @red;
             text-decoration:none;
             color:#444343;
             font-size:20px;
+
+            display: block;
         }
 
         @media screen and (max-width: 800px) {
             display: block;
             width: 100%;
+            border-bottom: 2px solid @light-slate;
+
+            
 
             a {
                 border-right: none;
-                border-bottom: 2px solid @red;
-                padding: 5%;
+                padding:20px 20px;
+                
+                
 
 
             }

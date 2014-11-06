@@ -426,8 +426,9 @@ wp_reset_postdata();
 
 	
 
-<div id="menu-container">
+<div id="menu-container" class='closed'>
 
+<button id='navigation-dropdown' title='expand navigation menu'><i class='fa fa-bars'></i> Navigation</button>
 <?php 
 
 $menu = array( 
