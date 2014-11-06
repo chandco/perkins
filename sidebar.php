@@ -188,20 +188,3 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 
 
-<?php if (get_the_ID() == "1034"): ?> 
-
-<div class="sidebar-section instagram">
-
-<h2 class="widgettitle">Instagram</h2>
-
-<img src="http://www.perkinreveller.co.uk/wp-content/themes/perkins/images/formsplitter.jpg" style="position: relative; top:-10px;" />
-
-<?php if ( !function_exists('dynamic_sidebar')
-
-|| !dynamic_sidebar() ) : ?>
-
-<?php endif; ?>
-
-</div>
-
-<?php endif; ?>
