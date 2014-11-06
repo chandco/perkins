@@ -92,7 +92,7 @@
 
 				
 
-				<p>
+				<p class='intro'>
 
 				<?php echo substr($post->post_content,0,220); ?>
 
@@ -128,7 +128,7 @@
 
                        
 
-                      <p>
+                      <p class='intro'>
 
 					  <?php echo substr($post->post_content,0,220); ?>
 
@@ -168,7 +168,7 @@
 
                        
 
-						<p>
+						<p class='intro'>
 
 						<?php echo substr($post->post_content,0,220); ?>
 
