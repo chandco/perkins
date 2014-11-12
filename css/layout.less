@@ -9,6 +9,12 @@
     @carousel-height : 100%;
     @header-height: 20%;
 
+    @media screen and (max-width: 800px) {
+        height: 400px;
+    }
+
+    position: relative;
+
     #header  {
 
         width:45%;
@@ -16,7 +22,7 @@
         left: 0;
         right: 0;
 
-        height: 20%;
+        height: 50%;
         
         padding: 20px 0;
         box-sizing: border-box;
@@ -29,14 +35,18 @@
 
         position: absolute;
         
-        top: @carousel-height * 0.05;
+        //top: @carousel-height * 0.05;
+
+        top:50%;
+        transform:translateY(-50%);
 
         z-index: 10;
 
         #perkin-svg {
 
             height: 100%;
-            width: auto;
+            width: 80%;
+            
             margin: auto;
             display: block;
 
@@ -89,15 +99,22 @@ body.home {
         height: 800px - (0.12 * 800px);
         height: 100vh - (0.12 * 100vh);
 
-    	
+    	@media screen and (max-width: 800px) {
+            height: 400px;
+        }
 
         #header  {
                 height: 18%;
 
                 position: relative;
                 top: 0;
-
+                transform:none;
                 #perkin-svg {
+
+                    height: 100%;
+                    width: auto;
+                    top: 0;
+
                     .st0 {
                        fill: @red;
                     }
@@ -110,15 +127,14 @@ body.home {
 
     	#carousel {
     	    height: 82%;
-            @media screen and (max-width: 800px) {
-                height: 30%;
-            }
     	}
      }
 
      #menu-container  {
         min-height: 0.12 * 800px;
         min-height: 0.12 * 100vh;
+
+
     }
 }
 
