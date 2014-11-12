@@ -133,8 +133,6 @@ switch($my_page_id){
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript"  src='http://www.perkinreveller.co.uk/wp-content/themes/perkins/js/magnific-popup.js?ver=1' data-cfasync="false"></script>
-<script type="text/javascript"  src='http://www.perkinreveller.co.uk/wp-content/themes/perkins/js/main-dist.js?ver=1' data-cfasync="false"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
