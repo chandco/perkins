@@ -229,8 +229,8 @@ if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))
 
 
 function perkin_enqueue_scripts() {
-	wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . "/js/magnific-popup.js", array('jquery'), 1, true );
-	wp_enqueue_script( 'perkin-main', get_stylesheet_directory_uri() . "/js/main-dist.js", array('jquery', 'magnific-popup'), 1, true );
+	//wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . "/js/magnific-popup.js", array('jquery'), 1, true );
+	//wp_enqueue_script( 'perkin-main', get_stylesheet_directory_uri() . "/js/main-dist.js", array('jquery', 'magnific-popup'), 1, true );
 }
 
 add_action("wp_enqueue_scripts","perkin_enqueue_scripts");
