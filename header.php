@@ -153,19 +153,19 @@ wp_head();
 
 ?>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" data-cfasync="false"></script>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jcarousellite.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jcarousellite.min.js" data-cfasync="false"></script>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.easing.1.3.js" data-cfasync="false"></script>
 
 
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.latest.js" data-cfasync="false"></script>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slider-calls.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slider-calls.js" data-cfasync="false"></script>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/backtotop.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/backtotop.js" data-cfasync="false"></script>
 
 
 
