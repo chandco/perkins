@@ -117,7 +117,7 @@ switch($my_page_id){
 
   <p align='center' class='social-links'>
   <a href="http://www.perkinreveller.co.uk/newsletter-sign-up/#form" ><i class="fa fa-newspaper-o"></i></a>
-   <a href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook"><i class="fa  fa-facebook"></i></a>
+   <a href="http://www.facebook.com/ThePerkinReveller" target="_blank" alt="Facebook" title="Facebook"><i class="fa  fa-facebook-square"></i></a>
 
    <a href="https://twitter.com/PerkinReveller" target="_blank" alt="Twitter" title="Twitter"><i class="fa  fa-twitter"></i></a>
 </p>

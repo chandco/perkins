@@ -25,6 +25,10 @@
     }
 }
 
+body.home #inner-content {
+    padding-top:0;    
+}
+
 div.main-column {
 
 
@@ -86,12 +90,11 @@ div.three-col-section {
         margin: 1em 5%;
     }
     height:auto;
-    text-align:center;
+    text-align:left;
 
     position: relative;
-    padding-bottom: 80px;
 
-    min-height: 555px; // won't always be this high, could be more, but generally if text is truncated it'll be under this.
+  
 
 
     img {
@@ -99,24 +102,16 @@ div.three-col-section {
         height: auto;
         margin: auto;
 
-        &.sym {
-            width: auto;
-            height: 75px;
-            //position: absolute;
-            
-            bottom: 0;
-            left: 0;
-            right: 0;
-            vertical-align: top;
 
-        }
     }
     h2 {
-        font-size:1.2em;
+        font-size:1.1em;
         font-weight:normal;
         margin:1em 0;
 
         min-height: 50px;
+        color: @red;
+        text-align: center;
     }
 
     p.intro {
@@ -124,7 +119,6 @@ div.three-col-section {
     }
     p {
         font-size:1em;
-        padding:0 20px;
     }
 
     @media screen and (max-width: 768px) {

@@ -100,7 +100,8 @@
 
 				</p>
 
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym1.png" alt="" class='sym'>
+				
+
 
 				</div>
 
@@ -136,7 +137,8 @@
 
 					  </p>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym2.png" alt="" class='sym'>
+                    
+
 
 						<?php endwhile; wp_reset_postdata(); ?>
 
@@ -176,7 +178,8 @@
 
 						</p>
 
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sym3.png" alt="" class='sym'>
+                     
+                     
 
 						<?php endwhile; wp_reset_postdata(); ?>                        
 
