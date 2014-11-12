@@ -229,6 +229,9 @@ if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))
 
 
 function perkin_enqueue_scripts() {
+	
+
+	wp_enqueue_script( 'jquery-ajax-form', get_stylesheet_directory_uri() . "/js/jquery.form.min.js", array('jquery'), 1, false );
 	wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . "/js/magnific-popup.js", array('jquery'), 1, true );
 	wp_enqueue_script( 'perkin-main', get_stylesheet_directory_uri() . "/js/main-dist.js", array('jquery', 'magnific-popup'), 1, true );
 }
