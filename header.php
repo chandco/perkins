@@ -154,7 +154,7 @@ wp_head();
 ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" data-cfasync="false"></script>
-
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.form.min.js" data-cfasync="false"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jcarousellite.min.js" data-cfasync="false"></script>
 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.easing.1.3.js" data-cfasync="false"></script>
