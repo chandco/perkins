@@ -279,11 +279,12 @@ div.sidebar-section {
     }
     h2 {
         
-        color: @light-slate;
-        font-size:1.3em;
+        color: @red;
+        font-size:1.2em;
         
-        margin:10px;
+        margin:10px auto;
         width: 100%;
+        box-sizing: border-box;
         text-align:center;
         font-weight: normal;
         text-transform: uppercase;
@@ -365,7 +366,7 @@ div.post {
 div.post-item {
     position:relative;
     padding-bottom:20px;
-    margin-bottom:50px;
+    border-bottom: 2px solid @light-slate;
 }
 a.upbtn {
     display:block;
@@ -612,7 +613,7 @@ h3.page-feed {
     text-align: left;
     a {
         text-decoration: none;
-        color: #ee2e24;
+        color: @dark-slate;
     }
 }
 p.menu-intro-text {

@@ -1,4 +1,12 @@
 .gallery {
+
+	&:hover {
+			figure {
+				opacity: 0.7;
+			}
+		}
+
+
 	figure {
 		width: 30%;
 
@@ -17,13 +25,14 @@
 		//border: 5px solid #fff;
 		//box-shadow: 0 0 5px 0 @light-slate;
 
+
 		img {
 			width: 100%;
 			height: auto;
 			min-height: 100%;
 			position: absolute;
 			top: 50%;
-			transform: translateY(-50%);
+			transform:scale(1,1)  translateY(-50%);
 
 		}
 
@@ -45,7 +54,19 @@
 				}
 			}
 
-
+		transition: transform .2s ease, opacity 0.7s ease;
 		overflow:hidden;
+
+
+
+		&:hover {
+			
+				transform:scale(1.1,1.1);
+				opacity: 1;
+		}
+
+		
 	}
+
+	
 }

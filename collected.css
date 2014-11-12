@@ -376,11 +376,11 @@ strong {
 	font-weight: bold;
 }
 cite, em, i {
-	font-style: italic;
+	font-style: normal;
 }
 blockquote {
 	font-family: Georgia, "Bitstream Charter", serif;
-	font-style: italic;
+	font-style: normal;
 	font-weight: normal;
 	margin: 0 3em;
 }
@@ -2786,7 +2786,7 @@ strong {
 	font-weight: bold;
 }
 cite, em, i {
-	font-style: italic;
+	font-style: normal;
 }
 cite {
 	border: none;
@@ -2797,7 +2797,7 @@ big {
 .mceContentBody blockquote,
 .mceContentBody blockquote p {
 	font-family: Georgia, "Bitstream Charter", serif !important;
-	font-style: italic !important;
+	font-style: normal !important;
 	font-weight: normal;
 	margin: 0 3em;
 }
