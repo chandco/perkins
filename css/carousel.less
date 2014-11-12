@@ -97,7 +97,7 @@ img.third-img {
         height: 100%;
 
         display: table;
-
+        overflow:hidden;
         li {
             list-style-type: none;
             display: none;
@@ -112,30 +112,32 @@ img.third-img {
             img {
 
                 vertical-align: middle;
-                top: 50%;
+                
                 position: absolute;
+
                 transform:translateY(-50%);
-                margin: auto;
+                top: 50%;
                 left: 0;
-                right: 0;
                 width: 100%;
                 height: auto;
 
+
                 
-                @media screen and (max-aspect-ratio: 4/3), screen and (max-width: 630px) {
-                    height: 100%;
-                    width: auto;
+
+               
+                margin: auto;
+
+
+                
+            
+
+                @media screen and (max-width: 800px) {
                     top:0;
+                    transform:none;
                     left: 50%;
                     transform:translateX(-50%);
-                }
-
-                 @media screen and (max-width: 800px) and (min-width:630px) {
-                    top:50%;
-                    transform:translateY(-50%);
-                    left: 0;
-                    width: 100%;
-                    height: auto;
+                    height: 100%;
+                    width: auto;
                 }
                 
 
