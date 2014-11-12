@@ -345,6 +345,7 @@ wp_reset_postdata();
 				
 </div>
 
+</header>
 
 <div id="menu-container" class='closed'>
 
@@ -380,4 +381,4 @@ wp_nav_menu($menu);
 ?>
 
 </div>
-</header>
+<div class="clear" ></div>

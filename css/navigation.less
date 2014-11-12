@@ -5,57 +5,61 @@
 }
 @media screen and (max-width: 800px) {
 
-    #navigation-dropdown {
-        display: block;
-        margin: auto;
-        background: none;
-        border: none;
-        font-family: "Hermes";
-        text-transform: uppercase;
-        font-size: 2em;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 2% 5%;
-        text-align: left;
-        cursor: pointer;
-        border-bottom: 2px solid @light-slate;
-    }
-
     body.home #menu-container {
-        min-height: 0;
-    }
-
-
-
-    #menu-container {
-
-        min-height: 0;
-
-        display: block;
-
-        .menu-primary-container {
-            display: block;
+            min-height: 0;
         }
 
-    }
-
-
-    #menu-container {
-   
-        &.closed {
-
-             #menu {
-                 max-height: 0;
-                 overflow: hidden;
-
-             }
     
+        #navigation-dropdown {
+            display: block;
+            margin: auto;
+            background: none;
+            border: none;
+            .hermes();
+            text-transform: uppercase;
+            font-size: 2em;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 2% 5%;
+            text-align: left;
+            cursor: pointer;
+            border-bottom: 2px solid @light-slate;
         }
-    }
 
+        
+
+        #menu-container {
+
+            min-height: 0;
+
+            display: block;
+            height: auto;
+
+            .menu-primary-container {
+                display: block;
+                max-height: 9999px;
+                transition: max-height .2s ease;
+            }
+
+            
+
+
+            
+           
+            &.closed {
+                 .menu-primary-container {
+                     max-height: 0;
+                     overflow: hidden;  
+                 }
+        
+            }
+            
+
+
+        }
+    
 
 }
-
 
 
 #menu {
@@ -72,11 +76,8 @@
     text-transform: uppercase;
     text-align: center;
 
-    max-height: 9999px;
-    transition: max-height .5s ease;
+    height: auto;
     
-
-
 
 
     li {
