@@ -1,66 +1,37 @@
 
 
-@px-height : 600px;
 
-@screenheight: 45vh;
-@carousel-size : 0.80;
+#main-header {
 
-@header-size : 0.8;
-@menu-size : 1 - @header-size;
+    height: 400px;
+    height: 40vh;
 
+    @carousel-height : 80%;
+    @header-height: 20%;
 
-@carousel-height-px : @px-height * @carousel-size;
-@carousel-height : @screenheight * @carousel-size;
+    #header  {
 
-#menu-container  {
-        min-height: (@px-height - @carousel-height-px) * @menu-size;
-        min-height: (@screenheight - @carousel-height) * @menu-size;
+        width:45%;
+        margin: auto;
+        left: 0;
+        right: 0;
 
-        width:100%;
-    
-        position:relative;
+        height: 20%;
+        
+        padding: 20px 0;
+        box-sizing: border-box;
+        z-index:10;
 
-         display:table;
-        .menu-primary-container {
-            width: 100%;
-            display:table-cell;
-            vertical-align: middle;
+        a {
+             height: 100%;
         }
-}
 
 
+        position: absolute;
+        
+        top: @carousel-height * 0.05;
 
-
-#header  {
-
-    width:45%;
-    margin: auto;
-    left: 0;
-    right: 0;
-
-    
-    
-    padding: 20px 0;
-    box-sizing: border-box;
-    z-index:10;
-
-    a {
-         height: 100%;
-    }
-
-
-    position: absolute;
-    top: (@carousel-height-px * 0.2);
-    top: (@carousel-height * 0.2);
-
-    z-index: 10;
-    height: (@carousel-height-px * 0.6);
-    height: (@carousel-height * 0.6);
-
-     
-
-
-
+        z-index: 10;
 
         #perkin-svg {
 
@@ -73,64 +44,75 @@
                    fill: #fff;
                 }
             }
+    }
+
+
+    #carousel {
+        z-index: 5; 
+        height: @carousel-height;
+        background: #000;
+        #carousel-slides {
+            opacity: 0.5;
+        }
+    }
+
+    #menu-container  {
+        min-height: 100% - @carousel-height;
+        
+        
+        width:100%;
+
+        position:relative;
+
+         display:table;
+        .menu-primary-container {
+            width: 100%;
+            display:table-cell;
+            vertical-align: middle;
+        }
+    }
 
 }
-
-
-#carousel {
-    z-index: 5;
-    height: @carousel-height-px;
-    height: @carousel-height;
-
-    
-}
-
 
 body.home {
 
 
-	@px-height : 800px;
-    @screenheight: 100vh;
-    @carousel-size : 0.7;
 
-    @header-size : 0.6;
-    @menu-size : 1 - @header-size;
+    #main-header {
 
+        height: 800px;
+        height: 100vh;
 
-	@carousel-height-px : @px-height * @carousel-size;
-	@carousel-height : @screenheight * @carousel-size;
+    	#menu-container  {
+                
+                min-height: 12%;
 
-	#menu-container  {
-            min-height: (@px-height - @carousel-height-px) * @menu-size;
-            min-height: (@screenheight - @carousel-height) * @menu-size;
-    }
-
-    #header  {
-            height: (@px-height - @carousel-height-px) * @header-size;
-            height: (@screenheight - @carousel-height) * @header-size;
-
-            position: relative;
-            top: 0;
-
-            #perkin-svg {
-                .st0 {
-                   fill: @red;
-                }
-                .st1 {
-                   fill: @dark-slate;
-                }
-            }
-    }
-
-
-	#carousel {
-	    height: @carousel-height-px;
-	    height: @carousel-height;
-        @media screen and (max-width: 800px) {
-            height: @carousel-height-px / 2;
-            height: @carousel-height / 2;
         }
-	}
+
+        #header  {
+                height: 18%;
+
+                position: relative;
+                top: 0;
+
+                #perkin-svg {
+                    .st0 {
+                       fill: @red;
+                    }
+                    .st1 {
+                       fill: @dark-slate;
+                    }
+                }
+        }
+
+
+    	#carousel {
+    	    height: 70%;
+            @media screen and (max-width: 800px) {
+                height: 30%;
+            }
+    	}
+     }
 }
 
 body.custom-background {

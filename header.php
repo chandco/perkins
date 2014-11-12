@@ -219,119 +219,69 @@ wp_enqueue_script( 'comment-reply' );
 
 <div id="page-wrapper">
 
+<header id='main-header'>
 <div id="header"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 
 <?php include( get_stylesheet_directory() . "/images/perkin-reveller-logo.svg" ); ?>
 
 </a> </div>
 
-
-
 <!--#header-->
 
 <?php
 
 global $wp_query;
-
 $page_object = $wp_query->get_queried_object();
-
 $my_page_id  = $wp_query->get_queried_object_id();
-
-
-
-
-
 
 switch($my_page_id){
 
 	case 11:
-
 	$slider = "Gallery";
-
 	break;	
-
-	
 
 	case 4:
-
 	$slider = "News";
-
 	break;
-
-	
 
 	case 5:
-
 	$slider = "About";
-
 	break;	
-
-	
 
 	case 6:
-
 	$slider = "Restaurant";
-
 	break;	
-
-	
 
 	case 7:
-
 	$slider = "Bar";
-
 	break;	
-
-	
 
 	case 10://41
-
 	$slider = "Menu";
-
 	$var = "Tom";
-
 	break;	
 
-	
-
 	case 88:
-
 	$slider = "Book";
-
 	break;
-
-	
 
 	default;
-
 	$slider = "Home";
-
 	break;
-
 }
-
-
 
 //if(get_post_type( $post->ID ) == "gallery"){$slider = "Gallery";}
 
 global $post;
 
 $meteor_posttemp = $post;
-
 $meteor_options  = get_option( 'meteorslides_options' );
-
 $meteor_nav      = $meteor_options['slideshow_navigation'];
-
 $meteor_count    = 1;
-
 $meteor_loop     = new WP_Query( array(
 
-
-
 'post_type'      => 'slide',
-
 'slideshow'      => $slider,
-
 'posts_per_page' => $meteor_options['slideshow_quantity']
 
 )); 
@@ -367,24 +317,11 @@ wp_reset_postdata();
 
 <div id="carousel">
 	
-		
-			
-				
-
-				<a href="#" id="prev-btn" class="pager-btn prev"><i class="fa fa-caret-left"></i></a> <a href="#" id="next-btn" class="pager-btn next"><i class="fa fa-caret-right"></i></a>
-
-
-
-				
-
-					<ul id='carousel-slides' class="anyslide">
-
+		<a href="#" id="prev-btn" class="pager-btn prev"><i class="fa fa-caret-left"></i></a> <a href="#" id="next-btn" class="pager-btn next"><i class="fa fa-caret-right"></i></a>
+		<ul id='carousel-slides' class="anyslide">
 						<?php 
-
 						$cs_hack = false;
-
 						foreach($data as $key=>$value): ?>
-
 
 							<li>
 								<?php $link = ( !empty( $value['link'] ) ) ? $value['link'] : "javascript:void();"; ?>
@@ -405,26 +342,9 @@ wp_reset_postdata();
 
 				
 
-			
-
-
-
-		
-
-
-
-	
+				
 </div>
 
-
-<script>
-
-
-
-</script>
-
-
-	
 
 <div id="menu-container" class='closed'>
 
@@ -460,3 +380,4 @@ wp_nav_menu($menu);
 ?>
 
 </div>
+</header>

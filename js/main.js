@@ -20,7 +20,37 @@ jQuery(function($) {
         $("#menu-container").toggleClass("closed");
         $("#navigation-dropdown i").toggleClass('fa-bars').toggleClass('fa-caret-up');
        
-    })
+    });
+
+
+    // fix for broken iphones
+    function iOSversion() {
+      if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        // supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+        return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+      } else {
+        return false; // not on IOS
+      }
+    }
+    ver = iOSversion();
+    console.log(ver);
+    if(ver[0] < 8 && ver[0]){
+
+        console.log('ios version below 8');
+
+        $("body.home #main-header").css('height', $(window).height());
+        $("body:not(.home) #main-header").css('height', '400px');
+        $("body:not(.home) #header").css('height', '200px').css("top",'60px');
+        function iosVhHeightBug() {
+            var height = $(window).height();
+            $("body.home #main-header").css('height', height);
+        }
+
+        iosVhHeightBug();
+        $(window).bind('resize', iosVhHeightBug);
+
+    }  
 
 
     var popup = {
