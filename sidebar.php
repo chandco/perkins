@@ -103,9 +103,9 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 <div class="sidebar-section" id="opening-hours">
 	<h2 class="widgettitle">Opening Hours</h2>
-<P>Monday – Friday: 11.30am – 23.00pm<br />
+<P>Monday – Friday 11.30am – 23.00pm<br />
 Saturday 9.00am – 23.00pm<br />
-Sunday: 9.00am – 16.00pm</P>
+Sunday 9.00am – 16.00pm</P>
 </div>
 
 <div class="sidebar-section" id="food-menu">
