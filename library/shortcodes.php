@@ -2,8 +2,7 @@
 
 function show_perkin_menus() {
 	
-	global $wpdb;
-	$id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'menus'");
+	
 
 	// hard coded bad mmkay
 	$args = array(
