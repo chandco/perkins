@@ -7,7 +7,7 @@ function show_perkin_menus() {
 
 	// hard coded bad mmkay
 	$args = array(
-		'post_parent' => $id,
+		'post_parent' => 394,
 		'order' => 'ASC',
 		'orderby' => 'menu_order',
 		'post_type' => 'page'
