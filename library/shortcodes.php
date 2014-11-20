@@ -9,7 +9,8 @@ function show_perkin_menus() {
 		'post_parent' => 394,
 		'order' => 'ASC',
 		'orderby' => 'menu_order',
-		'post_type' => 'page'
+		'post_type' => 'page',
+		'posts_per_page'   => -1,
 		);
 
 	$menus = get_posts($args);
