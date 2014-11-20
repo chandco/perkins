@@ -2,18 +2,19 @@
 
 function show_perkin_menus() {
 	
-	//global $wpdb;
-	//$id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'menus'");
+	global $wpdb;
+	$id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'menus'");
 
 	// hard coded bad mmkay
 	$args = array(
-		'post_parent' => 394,
+		'post_parent' => $id,
 		'order' => 'ASC',
 		'orderby' => 'menu_order',
+		'post_type' => 'page'
 		);
 
 	$menus = get_posts($args);
-
+	
 	$output = "<ul class='perkin-menu-list'>";
 
 	foreach ($menus as $menu) {

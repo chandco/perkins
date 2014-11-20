@@ -124,7 +124,7 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 
 
-	<ul class="show-on-menu-page">
+	<ul class="perkin-menu-list">
 
 		<li><a href="/bar-food/">Bar Food</a></li>
 
