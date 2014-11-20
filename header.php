@@ -234,34 +234,8 @@ $my_page_id  = $wp_query->get_queried_object_id();
 
 switch($my_page_id){
 
-	case 11:
-	$slider = "Gallery";
-	break;	
 
-	case 4:
-	$slider = "News";
-	break;
 
-	case 5:
-	$slider = "About";
-	break;	
-
-	case 6:
-	$slider = "Restaurant";
-	break;	
-
-	case 7:
-	$slider = "Bar";
-	break;	
-
-	case 10://41
-	$slider = "Menu";
-	$var = "Tom";
-	break;	
-
-	case 88:
-	$slider = "Book";
-	break;
 
 	default;
 	$slider = "Home";
