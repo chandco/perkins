@@ -5,6 +5,7 @@
 // This theme uses wp_nav_menu() in one location.
 
 require_once("library/gallery.php");
+require_once("library/shortcodes.php");
 
 $path = "http://www.perkinreveller.co.uk/wp-content/themes/twentyeleven";
 

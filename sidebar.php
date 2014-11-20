@@ -109,23 +109,7 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 
 
-<ul class="show-on-menu-page">
-
-		<li><a href="/lunch-menu/">Lunch</a></li>
-
-		<li><a href="/a-la-carte/">A la carte</a></li>
-
-		<li><a href="/breakfast/">Breakfast</li>
-
-		<li><a href="/desserts/">Desserts</a></li>
-
-		<li><a href="/teas/">Teas</li>
-
-		<li><a href="/afternoon-tea/">Afternoon Tea</a></li>
-
-<li><a href="/sunday-lunch/">Sunday Lunch</a></li>	
-
-	</ul>
+<?php echo do_shortcode("[perkinmenus]"); ?>
 
 
 <div style="clear: both;"></div>
