@@ -98,6 +98,7 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 <p style="margin-top: 15px; "><a href='tel:+442031666949'>+44 (0)20 3166 6949</a></p>
 
 <p style="margin-top: 15px; "><a href="mailto:info@perkinreveller.co.uk?subject=booking enquiry">info@perkinreveller.co.uk</a></p>
+
 <p>Now accepting reservations for New Year's Eve!</p>
 
 </div>
