@@ -115,7 +115,7 @@
 
 						<?php
 
-						$first_query = new WP_Query('pagename=&page_id=88&showposts=1');
+						$first_query = new WP_Query('page_id=699&showposts=1');
 
 						while($first_query->have_posts()) : $first_query->the_post();
 
