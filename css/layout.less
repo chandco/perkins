@@ -317,10 +317,16 @@ div.sidebar-section {
         overflow:hidden;
         
         li {
-            float: left;
-            width:50%;
-            display:inline;
-            padding-bottom: 2px;
+            width: 42%;
+            display: inline-block;
+            padding: 2%;
+            box-sizing: border-box;
+            
+            margin-right: 4%;
+
+            &:nth-child(n+3) {
+                border-top: 1px solid #E8DEDE;
+            }
             a {
                 text-decoration:none;
                 color:#444343;
