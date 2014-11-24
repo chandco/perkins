@@ -94,7 +94,7 @@
 
 				<p class='intro'>
 
-				<?php echo substr($post->post_content,0,220); ?>
+				<?php echo $post->post_content; ?>
 
 				...<a href="/menus/" title="<?php the_title(); ?>">more</a>
 
@@ -131,7 +131,7 @@
 
                       <p class='intro'>
 
-					  <?php echo substr($post->post_content,0,220); ?>
+					  <?php echo $post->post_content; ?>
 
 					  ...<a href="/book-a-table/" title="<?php the_title(); ?>">more</a>
 
@@ -172,7 +172,7 @@
 
 						<p class='intro'>
 
-						<?php echo substr($post->post_content,0,220); ?>
+						<?php echo substr($post->post_content,0,420); ?>
 
 						...<a href="<?php echo get_category_link(4); ?>" title="<?php the_title(); ?>">more</a>
 
