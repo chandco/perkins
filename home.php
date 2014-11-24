@@ -131,7 +131,7 @@
 
                       <p class='intro'>
 
-					  <?php echo $post->post_content; ?>
+					  <?php the_excerpt(); ?>
 
 					  ...<a href="/book-a-table/" title="<?php the_title(); ?>">more</a>
 
