@@ -70,7 +70,7 @@
 
 				//$first_query = new WP_Query('pagename=&page_id=41&showposts=1');
 
-				$first_query = new WP_Query('cat=10&posts_per_page=1');
+				$first_query = new WP_Query('page_id=2056');
 
 				while($first_query->have_posts()) : $first_query->the_post();
 
