@@ -304,9 +304,9 @@ div.sidebar-section {
 
     ul.perkin-menu-list {
         margin: 0;
-        padding: 10%;
+        padding: 4%;
         width: 100%;
-        left: 5%;
+        
         position: relative;
         box-sizing: border-box;
 
@@ -317,13 +317,13 @@ div.sidebar-section {
         overflow:hidden;
         
         li {
-            width: 42%;
+            width: 48%;
             display: inline-block;
             padding: 2%;
             box-sizing: border-box;
-            
-            margin-right: 4%;
-
+            &:nth-of-type(2n+1){
+                margin-right: 4%;
+            }
             &:nth-of-type(n+3) {
                 border-top: 1px solid #E8DEDE;
             }
