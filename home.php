@@ -172,7 +172,7 @@
 
 						<p class='intro'>
 
-						<?php echo substr($post->post_content,0,420); ?>
+						<?php echo strip_tags(substr($post->post_content,0,420)); ?>
 
 						...<a href="<?php echo get_category_link(4); ?>" title="<?php the_title(); ?>">more</a>
 
