@@ -129,13 +129,13 @@
 
                        
 
-                      <p class='intro'>
+                
 
 					  <?php the_excerpt(); ?>
 
 					  ...<a href="/book-a-table/" title="<?php the_title(); ?>">more</a>
 
-					  </p>
+					  
 
                     
 
