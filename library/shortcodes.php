@@ -25,4 +25,31 @@ function show_perkin_menus() {
 	return $output;
 }
 
+
 add_shortcode("perkinmenus","show_perkin_menus");
+
+function show_perkin_bar_menus() {
+	
+	
+
+	// hard coded bad mmkay
+	$args = array(
+		'category_name' => 'bar-menus'
+		'order' => 'ASC',
+		'orderby' => 'date',
+		'post_type' => 'post',
+		'posts_per_page'   => -1,
+		);
+
+	$menus = get_posts($args);
+	
+	$output = "<ul class='perkin-menu-list'>";
+
+	foreach ($menus as $menu) {
+		$output .= "<li><a href='" . get_permalink($menu->ID) . "'>" . $menu->post_title . "</a></li>";
+	}
+	$output .= "</ul>";
+
+	return $output;
+}
+add_shortcode("perkinbarmenus","show_perkin_bar_menus");
