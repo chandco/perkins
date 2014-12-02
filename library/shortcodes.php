@@ -34,7 +34,7 @@ function show_perkin_bar_menus() {
 
 	// hard coded bad mmkay
 	$args = array(
-		'category_name' => 'bar-menus'
+		'category_name' => 'bar-menus',
 		'order' => 'ASC',
 		'orderby' => 'date',
 		'post_type' => 'post',
