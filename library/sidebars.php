@@ -15,3 +15,5 @@ function cf_register_sidebars() {
 }
 
 add_action("widgets_init","cf_register_sidebars");
+
+?>
