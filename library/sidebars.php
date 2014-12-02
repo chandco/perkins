@@ -4,7 +4,7 @@ function cf_register_sidebars() {
 
 
 	register_sidebar(array(
-		'id' => 'sidebar1',
+		'id' => 'perkin-sidebar',
 		'name' => __( 'Main Sidebar', 'perkin-sidebar' ),
 		'description' => __( 'The main (primary) sidebar.', 'perkins' ),
 		'before_widget' => '<div id="%1$s" class="sidebar-section %2$s">',
