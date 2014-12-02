@@ -12,6 +12,6 @@ function cf_register_sidebars() {
 		'before_title' => '<h2 class="widgettitle">',
 		'after_title' => '</h2>',
 	));
-
+}
 
 add_action("widgets_init","cf_register_sidebars");

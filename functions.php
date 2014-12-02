@@ -6,7 +6,7 @@
 
 require_once("library/gallery.php");
 require_once("library/shortcodes.php");
-require_once("library/sidebars.php");
+
 
 $path = "http://www.perkinreveller.co.uk/wp-content/themes/twentyeleven";
 
@@ -60,115 +60,8 @@ add_action( 'after_setup_theme', 'remove_background_colours', 11 );
 
 
 
-if (function_exists('register_sidebar')) {
+require_once("library/sidebars.php");
 
-	global $path;
-
-	register_sidebar(array(
-
-		'name' => 'Widget Area',
-
-		'id' => 'widget-area',
-
-		'before_widget' => '<div class="sidebar-section">',
-
-		'after_widget' => '</div>',
-
-		'befoer_title' => '<h3 class="saa">',
-
-		'after_title' => '</h3><img src="'.$path.'/images/formsplitter.jpg" height="42" width="324" alt="">'
-
-	));
-
-}
-
-
-
-if (function_exists('register_sidebar')) {
-
-	register_sidebar(array(
-
-		'name' => 'Bottom Area',
-
-		'id' => 'bottom-area',
-
-		'before_widget' => '<div>',
-
-		'after_widget' => '</div>',
-
-		'befoer_title' => '<h3>',
-
-		'after_title' => '</h3>'
-
-	));
-
-}
-
-
-
-if (function_exists('register_sidebar')) {
-
-	register_sidebar(array(
-
-		'name' => 'Cart Area',
-
-		'id' => 'cart-area',
-
-		'before_widget' => '<div>',
-
-		'after_widget' => '</div>',
-
-		'befoer_title' => '<h3>',
-
-		'after_title' => '</h3>'
-
-	));
-
-}
-
-
-
-if (function_exists('register_sidebar')) {
-
-	register_sidebar(array(
-
-		'name' => 'Top Feature',
-
-		'id' => 'top-feature',
-
-		'before_widget' => '<div id="top_content">',
-
-		'after_widget' => '</div>',
-
-		'befoer_title' => '<h3>',
-
-		'after_title' => '</h3>'
-
-	));
-
-}
-
-
-
-if (function_exists('register_sidebar')) {
-
-	register_sidebar(array(
-
-		'name' => 'Bottom Feature',
-
-		'id' => 'bottom-feature',
-
-		'before_widget' => '<div>',
-
-		'after_widget' => '</div>',
-
-		'befoer_title' => '<h3>',
-
-		'after_title' => '</h3>'
-
-	));
-
-}
 
 
 
