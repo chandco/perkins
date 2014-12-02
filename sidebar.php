@@ -103,6 +103,8 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 </div>
 
+<?php dynamic_sidebar( 'perkin-sidebar' ); ?>
+
 <div class="sidebar-section" id="opening-hours">
 	<h2 class="widgettitle">Opening Hours</h2>
 <P>Monday – Friday 10am - 9pm<br />
@@ -111,6 +113,8 @@ Sunday 9am – 4pm</P>
 
 
 </div>
+
+
 
 <div class="sidebar-section" id="food-menu">
 

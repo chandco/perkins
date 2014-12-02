@@ -6,6 +6,7 @@
 
 require_once("library/gallery.php");
 require_once("library/shortcodes.php");
+require_once("library/sidebars.php");
 
 $path = "http://www.perkinreveller.co.uk/wp-content/themes/twentyeleven";
 
@@ -238,3 +239,5 @@ function perkin_enqueue_scripts() {
 }
 
 add_action("wp_enqueue_scripts","perkin_enqueue_scripts");
+
+add_filter("widget_text","do_shortcode");
