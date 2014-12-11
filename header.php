@@ -220,7 +220,7 @@ wp_enqueue_script( 'comment-reply' );
 <header id='main-header'>
 <div id="header"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-<?php include( get_stylesheet_directory() . "/images/perkin-reveller-logo.svg" ); ?>
+<img src='<?php echo get_stylesheet_directory_uri() . "/images/perkin-reveller-logo.png"; ?>' alt='Perkin Reveller' title='Perkin Reveller' id='perkin-img-logo' />
 
 </a> </div>
 
