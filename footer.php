@@ -125,11 +125,13 @@ switch($my_page_id){
 
 
 
-  <p class='contact-info'>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email">info@perkinreveller.co.uk</a>&nbsp;&nbsp;<span class="red">|</span>&nbsp;&nbsp;<a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces">Historic Royal Palaces</a></p>
+  <p class='contact-info'>020 3166 6949 &nbsp; <span class="red">|</span>&nbsp;&nbsp;<a href="mailto:info@perkinreveller.co.uk" title="Perkin Reveller Email">info@perkinreveller.co.uk</a></p>
 
-<p><a href='/website-terms-and-conditions/'>Website Terms and Conditions</a> | <a href='/privacy-policy/'>Privacy Policy</a></p>
+<p class='tandc'><a href='/website-terms-and-conditions/'>Website Terms and Conditions</a> | <a href='/privacy-policy/'>Privacy Policy</a></p>
+
+
 </footer>
-
+<p class='hrp'><a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/tol.png' alt='Historic Royal Palaces - Tower of London' /></a></p>
 
 
 <?php wp_footer(); ?>
