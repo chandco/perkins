@@ -105,6 +105,7 @@ switch($my_page_id){
 
 
 
+
 <footer id="footer" role='footer' class="<?php echo $style; ?>">
 
  
