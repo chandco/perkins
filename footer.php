@@ -131,7 +131,8 @@ switch($my_page_id){
 
 
 </footer>
-<p class='hrp'><a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/tol.png' alt='Historic Royal Palaces - Tower of London' /></a></p>
+<?php 
+/*<p class='hrp'><a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/tol.png' alt='Historic Royal Palaces - Tower of London' /></a></p>*/?>
 
 
 <?php wp_footer(); ?>
