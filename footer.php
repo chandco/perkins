@@ -130,10 +130,8 @@ switch($my_page_id){
 
 <p class='tandc'><a href='/website-terms-and-conditions/'>Website Terms and Conditions</a> | <a href='/privacy-policy/'>Privacy Policy</a></p>
 
-
+<p class='hrp'><a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces"><img src='http://www.hrp.org.uk/includes/p8/img/logos/hrp-header.svg' alt='Historic Royal Palaces - Tower of London' /></a></p>
 </footer>
-<?php 
-/*<p class='hrp'><a target="_blank" href="http://www.hrp.org.uk/" title="Historic Royal Palaces"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/tol.png' alt='Historic Royal Palaces - Tower of London' /></a></p>*/?>
 
 
 <?php wp_footer(); ?>
