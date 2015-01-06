@@ -1,18 +1,29 @@
 @media print {
 
+	html,body { height:auto;overflow: auto; }
+
 	.right-column, #menu-container, #main-header #carousel {
 		display: none;
 	}
 
 	#main-header {
-		height: 135px;
+		height: 40px;
 
 		#header {
-			height: 100%;
+			height: 80px;
+			background: none;
+			#perkin-img-logo {
+				width: 299px;
+				height: 30px;
+			}
 		}
 	}
 	body.home #main-header #header {
 
+	}
+
+	h3.page-feed {
+		text-align: center;
 	}
 
 	body #main-header #header #perkin-svg .st0 {

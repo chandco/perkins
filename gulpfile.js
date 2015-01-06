@@ -49,14 +49,23 @@ gulp.task('compile-css', function () {
 				.pipe(sourcemaps.init())
 			    .pipe(less())
 			    .pipe(autoprefixer())
-                .pipe(uglifycss())
+              //  .pipe(uglifycss())
 			    .pipe(sourcemaps.write('./maps'))
 			    .pipe(gulp.dest('./css/'));
 
 });
 
 
+gulp.task('dist-css', function () {
+    gulp.src('./css/perkin.less')
+               // .pipe(sourcemaps.init())
+                .pipe(less())
+                .pipe(autoprefixer())
+                .pipe(uglifycss())
+              //  .pipe(sourcemaps.write('./maps'))
+                .pipe(gulp.dest('./css/'));
 
+});
 
 
 gulp.task('resize-images', function () {
