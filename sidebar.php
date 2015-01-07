@@ -99,7 +99,6 @@ jQuery(document).on("click", "a#OTReserveNow", function(e) {
 
 <p style="margin-top: 15px; "><a href="mailto:info@perkinreveller.co.uk?subject=booking enquiry">info@perkinreveller.co.uk</a></p>
 
-<p>Now accepting reservations for <Br />New Year's Eve!</p>
 
 </div>
 
