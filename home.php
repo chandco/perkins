@@ -82,7 +82,7 @@
 
 				<a href="/menus/" title="<?php the_permalink(); ?>">
 
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tabimg1.png" height="215" width="283" alt="">
+				<?php the_post_thumbnail( 'homepage-thumb' ); ?>
 
 				</a>
 
@@ -123,7 +123,9 @@
 
 						<span class="edit"><?php edit_post_link(); ?></span>	
 
-                    	<a href="/book-a-table/" title="<?php the_title(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tabimg2.png" height="215" width="283" alt=""></a>	
+                    	<a href="/book-a-table/" title="<?php the_title(); ?>">
+                    		<?php the_post_thumbnail( 'homepage-thumb' ); ?>
+                    	</a>	
 
                         <h2><?php the_title(); ?></h2>
 
