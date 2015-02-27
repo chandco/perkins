@@ -113,6 +113,12 @@ function image_sizes_attachment_fields_to_edit( $form_fields, $post ) {
 
 
 
+function perkin_theme_init() {
+  add_theme_support( 'post-thumbnails', array( 'post' ) );
+  add_image_size( 'homepage-thumb', 283, 215, true ); // (cropped)
+}
+add_action( 'init', 'perkin_theme_init');
+
 add_filter( 'attachment_fields_to_edit', 'image_sizes_attachment_fields_to_edit', 100, 2 );
 
 
