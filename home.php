@@ -164,7 +164,10 @@
 
 						<span class="edit"><?php edit_post_link(); ?></span>
 
-                    	<a href="<?php echo get_category_link('4'); ?>" title="<?php the_permalink(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tabimg3.png" height="215" width="283" alt=""></a>
+                    	<a href="<?php echo get_category_link('4'); ?>" title="<?php the_permalink(); ?>">
+                    	<?php /*	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tabimg3.png" height="215" width="283" alt=""> */ ?>
+                    	<?php the_post_thumbnail( 'medium' ); ?>
+                    	</a>
 
                         <h2><?php the_title(); ?></h2>
 
