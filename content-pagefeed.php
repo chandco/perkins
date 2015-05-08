@@ -1,7 +1,7 @@
 <div  class="post-item">
 <p class="edit"><?php edit_post_link(); ?></p>
 <span><?php //the_author_posts_link(); echo ' : '; the_date(); ?></span>
-<h3 class='page-feed'>
+<h2 class='page-feed'>
 
 <?php if ( is_category( 'news' ) ) {
 	?><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><?php
@@ -9,9 +9,9 @@
 	?><?php the_title(); ?><?php
 }
 ?>
-</h3>
+</h2>
 <?php if (has_post_thumbnail()) {
-	the_post_thumbnail( 'large' );
+	the_post_thumbnail( 'featured-image' );
 }
 ?>
 <?php the_content(); ?>

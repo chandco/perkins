@@ -18,7 +18,8 @@ gulp.task('default', function () {
 
 
 	browserSync({
-	        proxy: "perkin.local",
+	        //proxy: "perkin.local",
+             proxy: "perkinreveller.dev.chand.co",
 	        files: "./css/*.css"
 	    });
 	

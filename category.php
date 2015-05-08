@@ -120,12 +120,6 @@ pagerAnchorBuilder: function(idx, slide) {
 
 return '<li><a href="#" onclick="return false;" class="gal-links"><img src="' + slide.src + '" width="90" height="70" /></a></li>';
 
-/*
-
-return '<li><a href="#" onclick="return false;" class="gal-links"><img src="http://s388488555.websitehome.co.uk/perkin-reveller/timthumb.php?src='+slide.src+ '&w=90&h70&z=2&zc=1" /></a></li>';
-
-*/ 
-
 } 	
 
 });
