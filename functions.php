@@ -6,7 +6,6 @@
 
 require_once("library/gallery.php");
 require_once("library/shortcodes.php");
-require_once("library/blog-list-widget.php");
 
 
 $path = "http://www.perkinreveller.co.uk/wp-content/themes/twentyeleven";
