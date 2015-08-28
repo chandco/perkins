@@ -1,7 +1,6 @@
 <?php
 
 
-
 // This theme uses wp_nav_menu() in one location.
 
 require_once("library/gallery.php");
@@ -124,7 +123,6 @@ add_filter( 'attachment_fields_to_edit', 'image_sizes_attachment_fields_to_edit'
 
 
 if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))
-
     add_action('wp', create_function('', '@ob_end_clean();@ini_set("zlib.output_compression", 1);'));
 
 
