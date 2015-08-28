@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php die("..."); ?><?php get_header(); ?>
 
 
 
