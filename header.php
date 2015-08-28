@@ -297,8 +297,8 @@ wp_reset_postdata();
 								<?php $link = ( !empty( $value['link'] ) ) ? $value['link'] : "javascript:void();"; ?>
 
 								<a href="<?php echo $link; ?>" title="<?php echo $value['title']; ?>" >
-
-								<img src="<?php echo esc_url( home_url( '/' ) ); ?>timthumb.php?src=<?php echo $value['images']; ?>&w=1600&h=800&zc=1" alt="" class="gallery-image" border="0"> 
+									
+								<img src="<?php echo $value['images']; ?>" alt="" class="gallery-image" border="0"> 
 
 								<span style="display:none;"><?php echo $value['title']; ?></span>
 
