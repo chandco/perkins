@@ -230,14 +230,14 @@ global $wp_query;
 $page_object = $wp_query->get_queried_object();
 $my_page_id  = $wp_query->get_queried_object_id();
 
-switch($my_page_id){
 
 
 
+$slider = get_post_meta( $my_page_id, 'slideshow', true);
 
-	default;
+var_dump($slider);
+if ($slider == "") {
 	$slider = "Home";
-	break;
 }
 
 //if(get_post_type( $post->ID ) == "gallery"){$slider = "Gallery";}

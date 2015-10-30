@@ -36,7 +36,13 @@
 
 
 
-		if($my_page_id == 2){$slider = "Gallery";}
+		if($my_page_id == 2){
+
+			$slider = "Gallery";
+		}
+
+		
+
 
 		global $post;
 
